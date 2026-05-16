@@ -12,9 +12,12 @@
 \thesisadvisor{XXX}
 \thesisdate{2026年5月}
 
-%% -------- 参考文献 --------
-\usepackage[backend=biber, style=gb7714-2015, gbpub=false]{biblatex}
-\addbibresource{bib/ref.bib}
+%% -------- 参考文献（按需启用） --------
+% 1. 在 bib/ref.bib 中添加文献条目
+% 2. 在正文中用 \cite{} 引用
+% 3. 取消下方两行的注释，注释掉末尾的占位章
+% \usepackage[backend=biber, style=gb7714-2015, gbpub=false]{biblatex}
+% \addbibresource{bib/ref.bib}
 
 %% ============================================================
 \begin{document}
@@ -48,7 +51,13 @@
 \input{chapters/06_conclusion}
 
 %% -------- 参考文献 --------
-\printbibliography[heading=bibliography]
+%% 使用参考文献时，启用上方 \usepackage 和 \addbibresource，
+%% 删除下面三行，改为：
+%% \clearpage
+%% \printbibliography[heading=bibliography]
+\chapter*{参考文献}
+\addcontentsline{toc}{chapter}{参考文献}
+（在此加入参考文献）
 
 %% -------- 附录 --------
 \appendix
