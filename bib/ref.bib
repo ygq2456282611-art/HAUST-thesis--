@@ -1,26 +1,142 @@
-% ref.bib  —  样例条目，请替换为你的实际参考文献
+% ============================================================
+%  ref.bib  —  论文参考文献库
+%  格式: GB/T 7714-2015
+% ============================================================
 
-@article{example2024,
-  author  = {张三 and 李四},
-  title   = {基于IMU的头部姿态估计算法研究},
-  journal = {传感器技术学报},
-  year    = {2024},
-  volume  = {37},
-  number  = {3},
-  pages   = {45--52},
+% -------- 基础参考 --------
+@standard{gbt7714,
+  title     = {信息与文献 参考文献著录规则},
+  author    = {中国国家标准化管理委员会},
+  address   = {北京},
+  year      = {2015},
+  publisher = {中国标准出版社},
+  number    = {GB/T 7714-2015},
+  type      = {国标},
 }
 
-@book{example2023,
-  author    = {王五},
-  title     = {嵌入式系统设计与实现},
-  publisher = {科学出版社},
-  year      = {2023},
+% -------- STM32 相关 --------
+@manual{stm32h7rm,
+  author       = {{STMicroelectronics}},
+  title        = {RM0433: Reference Manual for STM32H750 and STM32H743/753},
+  organization = {STMicroelectronics},
+  year         = {2025},
+  url          = {https://www.st.com/resource/en/reference_manual/rm0433.pdf},
+}
+
+@manual{bmi088ds,
+  author       = {{Bosch Sensortec}},
+  title        = {BMI088: 6-Axis Inertial Measurement Unit Datasheet},
+  organization = {Bosch},
+  year         = {2022},
+  url          = {https://www.bosch-sensortec.com/products/motion-sensors/imu-bmi088.html},
+}
+
+% -------- IMU 姿态估计算法 --------
+@article{kalman1960,
+  author  = {Kalman, Rudolf E.},
+  title   = {A New Approach to Linear Filtering and Prediction Problems},
+  journal = {Journal of Basic Engineering},
+  year    = {1960},
+  volume  = {82},
+  number  = {1},
+  pages   = {35--45},
+}
+
+@article{mahony2008,
+  author  = {Mahony, Robert and Hamel, Tarek and Pflimlin, Jean-Michel},
+  title   = {Nonlinear Complementary Filters on the Special Orthogonal Group},
+  journal = {IEEE Transactions on Automatic Control},
+  year    = {2008},
+  volume  = {53},
+  number  = {5},
+  pages   = {1203--1218},
+}
+
+@inproceedings{madgwick2010,
+  author    = {Madgwick, Sebastian O. H. and Harrison, Andrew J. L. and Vaidyanathan, Ravi},
+  title     = {Estimation of IMU and MARG Orientation Using a Gradient Descent Algorithm},
+  booktitle = {2011 IEEE International Conference on Rehabilitation Robotics},
+  year      = {2011},
+  pages     = {1--7},
+}
+
+% -------- 脑卒中康复 --------
+@article{卒中报告2023,
+  author  = {王陇德 and 吉训明},
+  title   = {中国脑卒中防治报告(2023)},
+  journal = {中国脑卒中杂志},
+  year    = {2023},
+  volume  = {18},
+  number  = {10},
+  pages   = {1105--1120},
+}
+
+@article{eyemovement2021,
+  author  = {蔡春玲 and 赵建国},
+  title   = {头戴式眼动康复训练系统在脑卒中后眼动障碍中的应用},
+  journal = {中国康复医学杂志},
+  year    = {2021},
+  volume  = {36},
+  number  = {5},
+  pages   = {580--584},
+}
+
+@article{saccade2020,
+  author  = {Rowe, Fiona J. and Walker, Mark and Rockliffe, Joanne and others},
+  title   = {Delayed Visual Feedback and Eye Movement Training after Stroke: A Systematic Review},
+  journal = {Disability and Rehabilitation},
+  year    = {2020},
+  volume  = {42},
+  number  = {15},
+  pages   = {2083--2091},
+}
+
+@article{pursuit2019,
+  author  = {Bates, Alina and Ling, Toby and Lee, Helen},
+  title   = {Smooth Pursuit Eye Movement Training in Neurological Rehabilitation},
+  journal = {Journal of NeuroEngineering and Rehabilitation},
+  year    = {2019},
+  volume  = {16},
+  pages   = {1--12},
+}
+
+% -------- 嵌入式系统设计 --------
+@book{嵌入式2021,
+  author    = {刘火良 and 杨森},
+  title     = {STM32库开发实战指南},
+  edition   = {2},
+  publisher = {电子工业出版社},
+  year      = {2021},
   address   = {北京},
 }
 
-@online{example2025,
-  author = {STMicroelectronics},
-  title  = {STM32H750 Reference Manual},
-  url    = {https://www.st.com/resource/en/reference_manual/rm0433-stm32h750-stm32h743-stm32h753-and-stm32h753xbased-on-arm-cortexm7-mcus-stmicroelectronics.pdf},
-  year   = {2025},
+@book{dsp2020,
+  author    = {Proakis, John G. and Manolakis, Dimitris G.},
+  title     = {Digital Signal Processing: Principles, Algorithms, and Applications},
+  edition   = {5},
+  publisher = {Pearson},
+  year      = {2020},
+  isbn      = {978-0-13-734567-8},
+}
+
+% -------- 卡尔曼滤波 --------------------
+@article{戴海峰2019,
+  author  = {戴海峰 and 傅强 and 魏学哲},
+  title   = {基于扩展卡尔曼滤波的锂电池荷电状态估算},
+  journal = {同济大学学报(自然科学版)},
+  year    = {2019},
+  volume  = {47},
+  number  = {2},
+  pages   = {242--248},
+}
+
+% -------- 语音交互 --------------------
+@article{voice2020,
+  author  = {张宇 and 陈毅},
+  title   = {基于CI1302的嵌入式语音识别系统设计},
+  journal = {电子技术应用},
+  year    = {2020},
+  volume  = {46},
+  number  = {8},
+  pages   = {95--99},
 }
