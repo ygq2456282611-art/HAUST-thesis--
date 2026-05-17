@@ -1,28 +1,43 @@
 % ============================================================
 %  chapters/00_cover.tex  —  封面
+%  布局: 左校徽 + 右校名/英文
 % ============================================================
 \thispagestyle{empty}
 
-\begin{center}
-
 \vspace*{2cm}
 
-{\zihao{1}\heiti 河南科技大学}
+% ----- 校徽 + 校名（居中对齐） -----
+\noindent
+\makebox[\textwidth][c]{%
+  \hspace*{-2.8cm}% 整体左移
+  \includegraphics[width=2.8cm]{logo.png}%校徽大小
+  \hspace{0.3cm}%校徽和校名距离
+  \raisebox{0.2cm}{%校名上移
+    \begin{minipage}[b]{10cm}
+      \centering
+      \includegraphics[width=11cm]{univname.png}%校名大小
 
-\vspace{0.3cm}
+      \vspace{0.12cm}
 
-{\zihao{3}\textbf{HENAN UNIVERSITY OF SCIENCE \& TECHNOLOGY}}
+      {\zihao{5}\textbf{HENAN UNIVERSITY OF SCIENCE \& TECHNOLOGY}}
+    \end{minipage}%
+  }%
+}
 
 \vspace{1.5cm}
 
+% ----- 主标题 -----
+\begin{center}
 {\zihao{1}\heiti 毕\ \ 业\ \ 设\ \ 计（论\ \ 文）}
 
-\vspace{2cm}
+\vspace{2.5cm}
 
+% ----- 题目 -----
 {\zihao{3}\heiti 题目\quad {\husttitle}}
 
 \vspace{3cm}
 
+% ----- 个人信息 -----
 {
 \zihao{4}\songti
 \begin{tabular}{rl}
@@ -35,6 +50,7 @@
 
 \vfill
 
+% ----- 日期 -----
 {\zihao{3}\songti \hustdate}
 
 \end{center}
