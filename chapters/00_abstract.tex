@@ -16,21 +16,26 @@
 \vskip 14pt
 
 {\zihao{-4}\songti
-（在此填写中文摘要，约 400--500 个汉字。扼要概括论文的主要内容和观点，语言精练、明确，语句流畅。）
+脑卒中是全球范围内导致长期残疾的首要原因之一。60\%至73\%的脑卒中幸存者伴有不同程度的视觉功能障碍，包括同向性偏盲、眼球运动障碍和单侧空间忽略等，这些视觉问题严重影响患者的日常生活能力与康复预后。然而，现有康复手段面临“两端不足”的困境：传统人工训练缺乏标准化和量化记录，VR/AR等高端设备成本高昂、操作复杂，难以满足居家长期康复需求。针对这一空白，本文设计并实现了一种基于STM32H723VGT6微控制器的低成本头戴式眼部康复训练装置。
+
+装置以DM-MC02核心板为硬件平台，集成了BMI088六轴惯性传感器、SG90双轴舵机云台、650nm激光模组、CI1302 AI语音交互模块以及WS2812状态指示灯等关键组件。在软件层面，设计并实现了基于互补滤波的多策略姿态估计算法，通过传感器坐标系到头部坐标系的线性重映射和100帧滑动方差头稳指标实现了佩戴者头部姿态的实时10ms级分析。开发了一个包含九种状态的系统状态机，支持完整训练模式（五种模式A至E自动串联）和自选训练模式（语音命令逐一选择）两种工作方式。五种临床训练模式——注视稳定性训练（15秒）、扫视训练（8试次随机跳变）、平稳追踪训练（8航点SmoothStep移动）、视觉聚焦训练（5循环远近交替）和空间忽略训练（6试次左右交替）——覆盖了从被动注视到主动视觉搜索的渐进式康复体系。语音交互系统基于CI1302离线识别引擎，支持10条可识别命令词和46条TTS播报词，配合三级安全保护机制（姿态超限自动暂停、语音紧急中断和跨状态模式切换）为老年患者提供了低认知负荷的全语音操作体验。
+
+测试结果表明，系统各模块通信正常，姿态估计精度满足训练需求，五种训练模式均能按照设计逻辑正确执行。本装置以约180g的总重量和低于200元的物料成本，提供了一套功能完整、操作便捷的居家视觉康复方案，为脑卒中后视觉障碍的长期康复训练提供了一种具有实用价值的工程技术路径。
+
 }
 
 \vskip 14pt
 
 \noindent
-{\zihao{-4}\heiti 关键词：}{\zihao{-4}\songti 关键词1，关键词2，关键词3，关键词4，关键词5}
+{\zihao{-4}\heiti 关键词：}{\zihao{-4}\songti 脑卒中；眼部康复；STM32；IMU姿态解算；头戴式装置；语音交互}
 
 \clearpage
 
 % ===== 英文摘要 =====
 \begin{center}
-{\zihao{3}\textbf{DESIGN AND IMPLEMENTATION OF \\[2pt]
+{\zihao{3}\textbf{DESIGN AND IMPLEMENTATION OF AN \\[2pt]
 STM32H7-BASED HEAD-MOUNTED OCULAR \\[2pt]
-REHABILITATION DEVICE FOR STROKE}}
+REHABILITATION DEVICE FOR STROKE PATIENTS}}
 \end{center}
 
 \vskip 28pt
@@ -42,12 +47,16 @@ REHABILITATION DEVICE FOR STROKE}}
 \vskip 28pt
 
 {\zihao{-4}
-（Enter English abstract here, approximately 300--450 words. The English abstract should correspond to the Chinese abstract in content.）
+Stroke is one of the leading causes of long-term disability worldwide. Between 60\% and 73\% of stroke survivors exhibit varying degrees of visual dysfunction, including homonymous hemianopsia, oculomotor disorders, and unilateral spatial neglect, all of which profoundly impair daily living activities and rehabilitation outcomes. Yet current clinical interventions face a critical dichotomy: conventional manual training methods lack standardization and quantitative documentation, while high-end VR/AR-based devices remain prohibitively expensive and operationally complex for home-based long-term rehabilitation. Addressing this gap, this thesis presents the design and implementation of a low-cost, head-mounted ocular rehabilitation training device centered on the STM32H723VGT6 microcontroller.
+
+The device employs a DM-MC02 core board as its hardware platform, integrating a BMI088 six-axis inertial measurement unit, an SG90 dual-axis servo gimbal, a 650\,nm laser module, a CI1302 AI voice interaction module, and a WS2812 programmable RGB status indicator. On the software side, a multi-strategy attitude estimation algorithm based on complementary filtering is implemented, alongside a linear remapping from the sensor coordinate frame to the head coordinate frame and a 100-frame sliding-window variance-based head stability index, achieving real-time head posture analysis at a 10\,ms cycle rate. A nine-state system state machine has been developed, supporting two operating modes: a Full Mode that automatically chains all five training patterns (A through E) in sequence, and a Custom Mode in which the patient selects individual patterns via voice commands. Five clinical training protocols — fixation stability training (15\,s), saccade training (eight randomized trials), smooth pursuit training (eight waypoints with SmoothStep interpolation), visual accommodation training (five near–far alternation cycles), and spatial neglect training (six left–right alternating trials) — form a progressive rehabilitation framework spanning from passive gaze maintenance to active visual exploration. The voice interaction subsystem, built on the CI1302 offline recognition engine, supports ten recognizable command words and 46 TTS broadcast phrases, and together with a three-tier safety protection mechanism (posture-exceedance auto-pause, voice-activated emergency interruption, and cross-state mode switching) delivers a cognitively accessible, hands-free interaction experience for elderly patients.
+
+Test results demonstrate normal communication across all hardware modules, attitude estimation accuracy sufficient for training requirements, and correct execution logic of all five training protocols. With a total mass of approximately 180\,g and a bill of materials under 200\,CNY, the device provides a functionally complete and user-friendly home-based visual rehabilitation solution, offering a practical engineering pathway for long-term recovery training for post-stroke visual impairment.
+
 }
 
 \vskip 28pt
 
 \noindent
-{\zihao{-4}\textbf{KEY WORDS：}}{\zihao{-4} Keyword1, Keyword2, Keyword3, Keyword4, Keyword5}
-
+{\zihao{-4}\textbf{KEY WORDS：}}{\zihao{-4} Stroke; Ocular Rehabilitation; STM32; IMU Attitude Estimation; Head-Mounted Device; Voice Interaction}
 \clearpage
