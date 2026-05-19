@@ -5,92 +5,55 @@
 \addcontentsline{toc}{chapter}{符号与缩略语说明}
 
 \noindent
-本文使用的符号、缩略语及其说明如表所示。
+本文使用的训练模式变量、数学符号及缩略语说明如下。
 
 \begin{table}[h!]
 \centering
-\caption{符号与缩略语说明}
-\label{tab:nomenclature}
-\begin{tabular}{p{3.5cm} p{4.5cm} p{6cm}}
+\caption{训练模式变量说明}
+\label{tab:nomen_modes}
+\begin{tabular}{p{4cm} p{10.5cm}}
 \hline
-\textbf{符号 / 缩略语} & \textbf{类别} & \textbf{说明} \\
+\textbf{符号 / 缩略语} & \textbf{说明} \\
 \hline
-\multicolumn{3}{l}{\textbf{—— 训练模式 ——}} \\
+MODE\_A（注视稳定性训练） & 固定激光点注视15\,s，监测头稳指标 \\
+MODE\_B（扫视训练） & 激光4个位置随机跳变$\times$8次，记录反应时间与正确率 \\
+MODE\_C（平稳追踪训练） & 8个航点SmoothStep平滑移动，每点停留2\,s按键确认 \\
+MODE\_D（视觉聚焦训练） & 近距LED与远距激光交替亮灭5个循环，训练睫状肌调节 \\
+MODE\_E（空间忽略训练） & 左右视野交替点亮6个试次，评估两侧反应时间差异 \\
+MODE\_COUNT & 训练模式总数（=5） \\
+APP\_FLOW\_FULL & 完整训练模式（五种模式A$\to$B$\to$C$\to$D$\to$E自动串联） \\
+APP\_FLOW\_CUSTOM & 自选训练模式（患者通过语音命令逐一选择） \\
+IMU & 惯性测量单元（Inertial Measurement Unit） \\
+MEMS & 微机电系统（Micro-Electro-Mechanical Systems） \\
+ASR & 自动语音识别（Automated Speech Recognition） \\
+TTS & 文本转语音（Text To Speech） \\
+AHRS & 姿态航向参考系统（Attitude and Heading Reference System） \\
+PWM & 脉宽调制（Pulse Width Modulation） \\
+AA 55 TYPE ID FB & CI1302 UART通信5字节固定帧格式（TYPE=$0x00$命令词/$0xFF$播报词） \\
 \hline
-MODE\_A / MODE\_FIXATION  & 训练模式 & 注视稳定性训练（固定激光点15\,s，监测头稳） \\
-MODE\_B / MODE\_SACCADE   & 训练模式 & 扫视训练（激光4位置随机跳变$\times$8次） \\
-MODE\_C / MODE\_PURSUIT   & 训练模式 & 平稳追踪训练（8航点SmoothStep移动） \\
-MODE\_D / MODE\_FOCUS     & 训练模式 & 视觉聚焦训练（近LED/远激光交替5循环） \\
-MODE\_E / MODE\_NEGLECT   & 训练模式 & 空间忽略训练（左/右视野交替6试次） \\
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{数学符号说明}
+\label{tab:nomen_math}
+\begin{tabular}{p{4cm} p{10.5cm}}
 \hline
-\multicolumn{3}{l}{\textbf{—— 系统状态 ——}} \\
+\textbf{符号} & \textbf{说明} \\
 \hline
-SYS\_MODE\_SELECT        & 系统状态 & 模式选择（PA2单击完整模式/双击自选模式） \\
-SYS\_MODE\_ENTER\_PROMPT & 系统状态 & 模式进入提示（播报确认语后延迟进入） \\
-SYS\_IDLE\_VOICE         & 系统状态 & 空闲等待（自选模式下静默等语音命令） \\
-SYS\_CALIBRATE           & 系统状态 & 姿态校准（陀螺仪800样本静止零偏校准） \\
-SYS\_TRAIN\_PROMPT       & 系统状态 & 训练开始提示（播报模式专用引导语） \\
-SYS\_TRAIN               & 系统状态 & 训练执行中 \\
-SYS\_FEEDBACK            & 系统状态 & 反馈评价（播报分级成绩） \\
-SYS\_NEXT\_CONFIRM       & 系统状态 & 下一模式确认（完整模式下PA2确认衔接） \\
-SYS\_PAUSE               & 系统状态 & 安全暂停（姿态超限或语音指令触发） \\
-SYS\_CALIB\_SERVO        & 系统状态 & 舵机标定（按键标记视野边界） \\
-\hline
-\multicolumn{3}{l}{\textbf{—— 坐标系与姿态 ——}} \\
-\hline
-$\mathbf{a}_s = [a_{sx}, a_{sy}, a_{sz}]$ & 传感器系加速度 & BMI088芯片坐标系下的三轴加速度 \\
-$\boldsymbol{\omega}_s = [\omega_{sx}, \omega_{sy}, \omega_{sz}]$ & 传感器系角速度 & BMI088芯片坐标系下的三轴角速度 \\
-$\mathbf{a}_h = [a_{hx}, a_{hy}, a_{hz}]$ & 头部系加速度 & 经重映射后的佩戴者头部坐标系加速度 \\
-$\boldsymbol{\omega}_h = [\omega_{hx}, \omega_{hy}, \omega_{hz}]$ & 头部系角速度 & 经重映射后的佩戴者头部坐标系角速度 \\
-$\theta$（Pitch） & 欧拉角 & 俯仰角（点头/仰头），° \\
-$\phi$（Roll） & 欧拉角 & 横滚角（左右转头），° \\
-$\psi$（Yaw） & 欧拉角 & 侧倾角（耳朵靠肩），° \\
-stability & 头稳指标 & 头部稳定度，°；越小越稳 \\
-is\_compensatory & 标志位 & 代偿性转头标志（1=检测到） \\
-is\_tremor       & 标志位 & 病理性头抖标志（1=检测到） \\
-safety\_alert    & 标志位 & 安全超限标志（1=触发暂停） \\
-\hline
-\multicolumn{3}{l}{\textbf{—— 硬件引脚与外设 ——}} \\
-\hline
-SPI2   & 通信总线 & BMI088与MCU间的串行外设接口（PC0/PC1/PC2/PC3/PB13） \\
-UART7  & 通信总线 & CI1302语音模块与MCU间的异步串口（PE7-RX/PE8-TX） \\
-TIM1\_CH1/CH3 & 定时器通道 & SG90舵机PWM驱动通道（PE9-Y轴/PE13-X轴） \\
-TIM12\_CH2 & 定时器通道 & 蜂鸣器PWM驱动通道（PB15） \\
-PA0    & GPIO & 激光模块控制引脚 \\
-PA2    & GPIO & 患者反馈按键引脚 \\
-PA7    & GPIO & WS2812 RGB LED数据引脚（SPI6\_MOSI） \\
-PB8/PB9 & GPIO & 聚焦LED/状态LED引脚 \\
-PC13/PC14/PC15 & GPIO & DM-02板5V电源使能控制引脚 \\
-\hline
-\multicolumn{3}{l}{\textbf{—— 语音协议 ——}} \\
-\hline
-AA 55 TYPE ID FB & 帧格式 & CI1302 UART通信的5字节固定帧结构 \\
-TYPE=$0x00$ & 命令词区域 & 训练模式选择和模式切换命令 \\
-TYPE=$0x01\sim0x0A$ & 唤醒词区域 & 暂停/继续/重开/跳过/你好小盈等 \\
-TYPE=$0xFF$ & 播报区域 & 纯TTS播报，MCU主动触发 \\
-ID=$0x02\sim0x08$ & 命令词ID & 训练模式命令词的ID编号 \\
-ID=$0x01\sim0x2D$ & TTS播报ID & 共计46条TTS播报词编号 \\
-\hline
-\multicolumn{3}{l}{\textbf{—— 工作模式 ——}} \\
-\hline
-APP\_FLOW\_FULL   & 训练流程 & 完整训练模式（五种模式A→B→C→D→E自动串联） \\
-APP\_FLOW\_CUSTOM & 训练流程 & 自选训练模式（患者语音命令逐一选择） \\
-\hline
-\multicolumn{3}{l}{\textbf{—— 舵机参数 ——}} \\
-\hline
-CCR1/CCR3 & 定时器寄存器 & TIM1通道1/3的比较寄存器取值（500$\sim$2500） \\
-CALIB\_X\_MIN/MAX & 标定常数 & 舵机X轴视野标记边界角度 \\
-CALIB\_Y\_MIN/MAX & 标定常数 & 舵机Y轴视野标记边界角度 \\
-\hline
-\multicolumn{3}{l}{\textbf{—— 其他缩略语 ——}} \\
-\hline
-IMU    & 缩略语 & 惯性测量单元（Inertial Measurement Unit） \\
-MEMS   & 缩略语 & 微机电系统（Micro-Electro-Mechanical Systems） \\
-ASR    & 缩略语 & 自动语音识别（Automated Speech Recognition） \\
-TTS    & 缩略语 & 文本转语音（Text To Speech） \\
-AHRS   & 缩略语 & 姿态航向参考系统（Attitude and Heading Reference System） \\
-PWM    & 缩略语 & 脉宽调制（Pulse Width Modulation） \\
-VFo    & 缩略语 & 本装置调试协议（Volatile Flow Protocol） \\
+$\mathbf{a}_s = [a_{sx},\, a_{sy},\, a_{sz}]$ & BMI088传感器坐标系下的三轴加速度（m/s$^2$） \\
+$\boldsymbol{\omega}_s = [\omega_{sx},\, \omega_{sy},\, \omega_{sz}]$ & BMI088传感器坐标系下的三轴角速度（dps） \\
+$\mathbf{a}_h = [a_{hx},\, a_{hy},\, a_{hz}]$ & 经重映射后的佩戴者头部坐标系三轴加速度 \\
+$\boldsymbol{\omega}_h = [\omega_{hx},\, \omega_{hy},\, \omega_{hz}]$ & 经重映射后的佩戴者头部坐标系三轴角速度 \\
+$\theta$（pitch） & 头部俯仰角（点头/仰头），单位：度（$^{\circ}$） \\
+$\phi$（roll） & 头部横滚角（左右转头），单位：度（$^{\circ}$） \\
+$\psi$（yaw） & 头部侧倾角（耳朵靠肩），单位：度（$^{\circ}$） \\
+$\sigma$（stability） & 头稳指标，pitch与roll的滑动窗口联合标准差（$^{\circ}$） \\
+CCR$_1$ / CCR$_3$ & TIM1通道1/3的比较寄存器值，500$\sim$2500对应0.5$\sim$2.5\,ms脉宽 \\
+CALIB\_X\_MIN / CALIB\_X\_MAX & SG90云台X轴（俯仰）视野标定边界角度 \\
+CALIB\_Y\_MIN / CALIB\_Y\_MAX & SG90云台Y轴（偏航）视野标定边界角度 \\
+$t$ & 归一化时间参数，$t\in[0,1]$（用于插值计算） \\
 \hline
 \end{tabular}
 \end{table}
