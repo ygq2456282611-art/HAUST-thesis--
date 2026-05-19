@@ -12,9 +12,9 @@
 \caption{训练模式变量说明}
 \label{tab:nomen_modes}
 \begin{tabular}{p{4cm} p{10.5cm}}
-\hline
+\toprule[1.5pt]
 \textbf{符号 / 缩略语} & \textbf{说明} \\
-\hline
+\midrule[1pt]
 MODE\_A（注视稳定性训练） & 固定激光点注视15\,s，监测头稳指标 \\
 MODE\_B（扫视训练） & 激光4个位置随机跳变$\times$8次，记录反应时间与正确率 \\
 MODE\_C（平稳追踪训练） & 8个航点SmoothStep平滑移动，每点停留2\,s按键确认 \\
@@ -30,7 +30,7 @@ TTS & 文本转语音（Text To Speech） \\
 AHRS & 姿态航向参考系统（Attitude and Heading Reference System） \\
 PWM & 脉宽调制（Pulse Width Modulation） \\
 AA 55 TYPE ID FB & CI1302 UART通信5字节固定帧格式（TYPE=$0x00$命令词/$0xFF$播报词） \\
-\hline
+\bottomrule[1.5pt]
 \end{tabular}
 \end{table}
 
@@ -39,9 +39,9 @@ AA 55 TYPE ID FB & CI1302 UART通信5字节固定帧格式（TYPE=$0x00$命令�
 \caption{数学符号说明}
 \label{tab:nomen_math}
 \begin{tabular}{p{4cm} p{10.5cm}}
-\hline
+\toprule[1.5pt]
 \textbf{符号} & \textbf{说明} \\
-\hline
+\midrule[1pt]
 $\mathbf{a}_s = [a_{sx},\, a_{sy},\, a_{sz}]$ & BMI088传感器坐标系下的三轴加速度（m/s$^2$） \\
 $\boldsymbol{\omega}_s = [\omega_{sx},\, \omega_{sy},\, \omega_{sz}]$ & BMI088传感器坐标系下的三轴角速度（dps） \\
 $\mathbf{a}_h = [a_{hx},\, a_{hy},\, a_{hz}]$ & 经重映射后的佩戴者头部坐标系三轴加速度 \\
@@ -54,7 +54,7 @@ CCR$_1$ / CCR$_3$ & TIM1通道1/3的比较寄存器值，500$\sim$2500对应0.5$
 CALIB\_X\_MIN / CALIB\_X\_MAX & SG90云台X轴（俯仰）视野标定边界角度 \\
 CALIB\_Y\_MIN / CALIB\_Y\_MAX & SG90云台Y轴（偏航）视野标定边界角度 \\
 $t$ & 归一化时间参数，$t\in[0,1]$（用于插值计算） \\
-\hline
+\bottomrule[1.5pt]
 \end{tabular}
 \end{table}
 \clearpage
