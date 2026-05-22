@@ -43,11 +43,10 @@ PWM & 脉宽调制（Pulse Width Modulation） \\
 \hline
 $\mathbf{a}_s  = [a_{sx},\, a_{sy},\, a_{sz}]$ & BMI088传感器坐标系下的三轴加速度（m/s$^2$） \\
 $\boldsymbol{\omega}_s = [\omega_{sx},\, \omega_{sy},\, \omega_{sz}]$ & BMI088传感器坐标系下的三轴角速度（dps） \\
-$\mathbf{a}_h  = [a_{hx},\, a_{hy},\, a_{hz}]$ & 经重映射后的佩戴者头部坐标系三轴加速度 （m/s$^2$）\\
-$\boldsymbol{\omega}_h = [\omega_{hx},\, \omega_{hy},\, \omega_{hz}]$ & 经重映射后的佩戴者头部坐标系三轴角速度 （dps）\\
-$\theta$（pitch） & 头部俯仰角，单位：度（$^{\circ}$） \\
-$\phi$（roll） & 头部横滚角，单位：度（$^{\circ}$） \\
-$\psi$（yaw） & 头部侧倾角，单位：度（$^{\circ}$） \\
+$a_{sx}, a_{sy}, a_{sz}$ & 加速度计X、Y、Z轴原始输出分量（USB口朝上佩戴：X↑垂直、Y←左、Z→前）\\
+$\theta$（pitch） & 头部俯仰角（点头为负/仰头为正），单位：度（$^{\circ}$） \\
+$\phi$（roll） & 头部横滚角（左转为正/右转为负），单位：度（$^{\circ}$） \\
+$\psi$（yaw） & 头部侧倾角（右耳靠肩为正），单位：度（$^{\circ}$） \\
 $\sigma$（stability） & 头稳指标，pitch与roll的滑动窗口联合标准差（$^{\circ}$） \\
 CCR$_1$ / CCR$_3$ & TIM1通道1/3的比较寄存器值 \\
 CALIB\_X\_MIN  & SG90云台X轴右边界 \\
