@@ -86,11 +86,40 @@ Z轴 & 垂直芯片表面指向前方 & 绕前后轴的旋转（侧倾/耳朵靠
 
 系统的姿态估计在最新的实现中采用了四元数融合框架。与早期开发中按轴分别采用卡尔曼滤波、纯陀螺仪积分和加速度计反算的三种独立策略不同，当前版本基于四元数姿态表示统一处理所有旋转自由度。
 
-四元数是复数在四维空间中的一种推广形式，由一个标量部分和一个三维向量部分组成，通常记为$\mathbf{q} = q_0 + q_1\mathbf{i} + q_2\mathbf{j} + q_3\mathbf{k}$，其中$q_0$为实部，$(q_1, q_2, q_3)$为虚部，$\mathbf{i},\mathbf{j},\mathbf{k}$满足$\mathbf{i}^2=\mathbf{j}^2=\mathbf{k}^2=\mathbf{ijk}=-1$。当用于姿态表示时，单位四元数（$|\mathbf{q}|=1$）将任何三维空间中的旋转描述为绕单位轴$\mathbf{u}$转动角度$\theta$的形式：$\mathbf{q} = [\cos(\theta/2),\; \mathbf{u}\sin(\theta/2)]$。
+四元数是复数在四维空间中的推广形式，由一个标量部分和一个三维向量部分组成，通常记为$\mathbf{q} = q_0 + q_1\mathbf{i} + q_2\mathbf{j} + q_3\mathbf{k}$，其中$q_0$为实部，$(q_1, q_2, q_3)$为虚部，$\mathbf{i},\mathbf{j},\mathbf{k}$满足$\mathbf{i}^2=\mathbf{j}^2=\mathbf{k}^2=\mathbf{ijk}=-1$。当用于姿态表示时，单位四元数（$|\mathbf{q}|=1$）将三维空间中的任意旋转描述为绕单位轴$\mathbf{u}$转动角度$\theta$的形式：$\mathbf{q} = [\cos(\theta/2),\; \mathbf{u}\sin(\theta/2)]$。
 
-在本项目中选择四元数而非传统的欧拉角表示法主要基于三个实际考量。其一，欧拉角在$pitch = \pm 90^\circ$附近会出现万向锁现象——此时$roll$和$yaw$的旋转轴重合，完全失去一个旋转自由度，而患者在日常佩戴中（如大幅度低头寻找地面上的物体时）完全可能接近这一奇异姿态。四元数作为全局非奇异参数化表达，在任意角度下均保持连续和平滑。其二，BMI088陀螺仪提供的是三轴角速度，以四元数微分方程$\dot{\mathbf{q}} = \frac{1}{2}\boldsymbol{\omega} \otimes \mathbf{q}$积分可一步完成全姿态的预测更新，无需像欧拉角法那样分别求解三个通道再手动协调。其三，加速度计观测值与预测值之间的修正在四元数域内运算稳定——通过计算重力参考四元数与预测四元数的误差后以互补增益进行球面线性插值（SLERP），避免了欧拉角修正中因角度跳变（$180^\circ$到$-180^\circ$的边界问题）导致的奇异跳变。
+四元数姿态更新的核心是联系角速度测量值与姿态变化速率的微分方程。BMI088陀螺仪提供的是三轴角速度向量$\boldsymbol{\omega}_s = [\omega_{sx}, \omega_{sy}, \omega_{sz}]$，将其表示为纯四元数$\boldsymbol{\omega} = (0, \omega_{sx}, \omega_{sy}, \omega_{sz})$后，姿态四元数随时间的变化率由式\ref{eq:quat_diff}给出：
 
-姿态预测阶段使用陀螺仪的三轴角速度测量值构建旋转四元数，通过四元数乘法对当前姿态进行计算。姿态校正阶段以加速度计的归一化重力方向作为绝对参考，通过加速度计计算出观测$roll$和$pitch$值：
+\begin{equation}
+\dot{\mathbf{q}} = \frac{1}{2} \boldsymbol{\omega} \otimes \mathbf{q}
+\label{eq:quat_diff}
+\end{equation}
+
+其中$\otimes$为四元数乘法。该微分方程的物理含义是：每一帧内，陀螺仪测量出绕三轴旋转的角速度（rad/s），乘以时间步长$\Delta t$得到微小旋转角，将其构造成增量四元数$\Delta\mathbf{q}$后左乘当前姿态四元数，即完成一步前向姿态预测，如式\ref{eq:quat_integrate}所示：
+
+\begin{equation}
+\mathbf{q}_{t+1} = \mathbf{q}_t + \dot{\mathbf{q}}_t \cdot \Delta t
+\label{eq:quat_integrate}
+\end{equation}
+
+上述过程在单次乘法中精确处理了三维旋转的全部顺序约束，彻底规避了欧拉角逐轴积分因旋转顺序不独立而引人的坐标转换累积误差。
+
+在本项目中选择四元数而非传统的欧拉角表示法主要基于以下三个方面。
+
+（1）避免万向锁（Gimbal Lock）。欧拉角在$pitch = \pm 90^\circ$附近会出现万向锁现象——此时$roll$和$yaw$的旋转轴退化至重合，完全丧失一个旋转自由度。患者在日常佩戴中完全可能接近这一奇异姿态（如大幅度低头寻找地面物体时），导致欧拉角输出发生不连续的跳变。四元数作为一种全局非奇异的参数化表达，在任意角度下均保持姿态演化的连续和平滑。
+
+（2）角速度直接积分。BMI088陀螺仪以固定频率输出三轴角速度。若采用欧拉角法，每个轴的角速度需分别积分后按$Roll \rightarrow Pitch \rightarrow Yaw$的固定顺序组合，旋转次序本身决定了最终姿态的准确性。而利用式\ref{eq:quat_diff}的微分方程，仅需一次四元数乘法和归一化即可完成全姿态的预测更新，运算简洁且物理意义明确。
+
+（3）加速度计修正在四元数域内稳定。由加速度计计算得到的观测$roll$和$pitch$（式\ref{eq:roll_acc}和式\ref{eq:pitch_acc}）首先构造为重力参考四元数$\mathbf{q}_{\text{acc}}$，再与预测四元数$\mathbf{q}_{\text{pred}}$进行互补融合：
+
+\begin{equation}
+\mathbf{q}_{\text{corrected}} = \mathbf{q}_{\text{pred}} + K \cdot (\mathbf{q}_{\text{acc}} - \mathbf{q}_{\text{pred}})
+\label{eq:quat_correct}
+\end{equation}
+
+其中$K$为修正增益（默认值为2.8）。修正结果经归一化后转换为欧拉角输出。四元数域内的加法与数乘运算天然避免了欧拉角修正中常见的$180^\circ \leftrightarrow -180^\circ$边界跳变问题，保证了姿态输出的时序平滑性。
+
+姿态预测阶段使用陀螺仪的三轴角速度测量值构建增量四元数，通过式\ref{eq:quat_diff}和式\ref{eq:quat_integrate}对当前姿态进行一步前向传播。姿态校正阶段以加速度计的归一化重力方向作为绝对参考，通过式\ref{eq:roll_acc}和式\ref{eq:pitch_acc}计算观测角度，再由式\ref{eq:quat_correct}实现融合。修正后的四元数经归一化后直接转换为三轴欧拉角输出，作为后续头部姿态分析和安全监测的唯一数据源。
 
 \begin{equation}
 roll = \text{atan2}(a_{sy},\; a_{sz}) \cdot \frac{180}{\pi}
@@ -101,8 +130,6 @@ roll = \text{atan2}(a_{sy},\; a_{sz}) \cdot \frac{180}{\pi}
 pitch = \text{atan2}(-a_{sx},\; \sqrt{a_{sy}^2 + a_{sz}^2}) \cdot \frac{180}{\pi}
 \label{eq:pitch_acc}
 \end{equation}
-
-由这两个观测角度构建重力参考四元数，在修正增益（默认值为2.8）的控制下与预测四元数进行互补融合。修正后的四元数经归一化后直接转换为三轴欧拉角输出，作为后续头部姿态分析和安全监测的唯一数据源。
 
 横滚角（$roll$）因受益于重力分量在加速度计Y-Z平面的直接反映，在静态和准静态条件下具有很高的精度。俯仰角（$pitch$）由加速度计X轴分量和YZ平面合成量反算获得，在头部未接近极端俯仰姿态时（$|pitch| < 60^\circ$）精度良好。偏航角（$yaw$）因缺乏磁力计提供的绝对地磁参考，仅依赖陀螺仪绕Z轴的角速度积分更新，在长时间运行条件下会逐渐累积漂移误差。在初始化阶段通过800个样本静止校准，并对各轴陀螺仪零偏进行精准估计，在单次训练时长（$15\sim50$s）内$yaw$漂移量保持在$2^\circ$以内，满足康复训练应用对侧倾角感知的精度需求。
 
