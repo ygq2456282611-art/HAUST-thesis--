@@ -1,27 +1,199 @@
-% ref.bib  —  参考文献数据库（在此添加你的文献条目）
-% 格式示例见下方，支持 GB/T 7714-2015 格式
-%
-% 使用方法：
-% 1. 在此文件中按以下格式添加文献条目
-% 2. 在正文中使用 \cite{key} 引用
-% 3. 编译后参考文献列表自动生成
-%
-% 文献类型：
-%   @article    — 期刊文章
-%   @book       — 书籍
-%   @inproceedings — 会议论文
-%   @phdthesis  — 学位论文
-%   @patent     — 专利
-%   @online     — 网页
-%   @manual     — 技术手册
+% ref.bib  —  参考文献数据库（GB/T 7714-2015 格式）
+% 使用 biber 后端编译
+% ============================================================
 
-% ---------- 示例条目（编译后不显示，删除本行可见） ----------
-% @article{example2024,
-%   author  = {张三 and 李四},
-%   title   = {论文标题},
-%   journal = {期刊名称},
-%   year    = {2024},
-%   volume  = {37},
-%   number  = {3},
-%   pages   = {45--52},
-% }
+%% ========= 脑卒中临床与康复研究 =========
+
+@article{meng2025stroke,
+  author  = {孟喆 and 王琳 and 陈梅 and 胡彦桐 and 张智 and 赵武},
+  title   = {150例脑卒中恢复期患者临床治疗效果及预后影响因素研究},
+  journal = {辽宁中医杂志},
+  year    = {2025},
+  note    = {预发表，缺少卷期页码 — 需补充}
+}
+
+@article{sun2024cognitive,
+  author  = {孙维维},
+  title   = {基于OT思维的运动训练对脑卒中患者平衡功能及执行功能的影响},
+  journal = {中国康复医学杂志},
+  year    = {2024},
+  note    = {缺少卷期页码 — 需补充}
+}
+
+@article{liu2025headmount,
+  author  = {刘瑞芳},
+  title   = {头戴式视觉训练对脑卒中后肢体功能康复的影响},
+  journal = {中华物理医学与康复杂志},
+  year    = {2025},
+  volume  = {47},
+  number  = {10},
+  doi     = {10.3969/j.issn.2097-5457.2025.10.004}
+}
+
+@article{liu2023vision,
+  author  = {刘瑞霞 and 张国良},
+  title   = {脑卒中后视觉障碍研究进展},
+  journal = {护理研究},
+  year    = {2023},
+  volume  = {37},
+  number  = {22},
+  pages   = {45--52},
+  doi     = {10.12102/j.issn.1009-6493.2023.10.022}
+}
+
+@article{zheng2025stroke,
+  author  = {郑华 and 苏慧 and 李凯燕 and 罗海平 and 王宁 and 凌芳 and 李慧萍 and 罗丽萍 and 杨秀},
+  title   = {卒中后视功能障碍的研究进展},
+  journal = {中国实用神经疾病杂志},
+  year    = {2025},
+  volume  = {28},
+  number  = {1},
+  pages   = {114--118},
+  doi     = {10.12083/SYSJ.231395}
+}
+
+@article{sun2024pursuit,
+  author  = {孙雪 and 刘文平 and 王磊 and 等},
+  title   = {脑卒中后眼球运动障碍的行为视觉训练效果},
+  journal = {中国康复理论与实践},
+  year    = {2024},
+  volume  = {30},
+  number  = {6},
+  pages   = {726--730}
+}
+
+@article{rowe2025eso,
+  author  = {Rowe, F J and Hepworth, L R and Coco-Martin, M B and others},
+  title   = {European Stroke Organisation (ESO) guideline on visual impairment in stroke},
+  journal = {European Stroke Journal},
+  year    = {2025},
+  volume  = {10},
+  number  = {3},
+  pages   = {213--235},
+  doi     = {10.1177/23969873251314693}
+}
+
+@article{pollock2011interventions,
+  author  = {Pollock, A and others},
+  title   = {Interventions for disorders of eye movement in patients with stroke},
+  journal = {Cochrane Database of Systematic Reviews},
+  year    = {2011},
+  number  = {10},
+  pages   = {CD008389}
+}
+
+@article{herron2015review,
+  author  = {Herron, C and others},
+  title   = {Review of experience with a collaborative eye care clinic in inpatient stroke rehabilitation},
+  journal = {British Journal of Occupational Therapy},
+  year    = {2015},
+  volume  = {78},
+  number  = {6},
+  pages   = {347--353}
+}
+
+@article{rowe2021ivis,
+  author  = {Rowe, F J and Hepworth, L R},
+  title   = {The Impact of Visual Impairment in Stroke (IVIS) Study -- Evidence of Reproducibility},
+  journal = {Neuro-Ophthalmology},
+  year    = {2021},
+  volume  = {45},
+  number  = {2},
+  pages   = {101--109}
+}
+
+@article{zhang2020vr,
+  author  = {张震},
+  title   = {虚拟现实技术在脑卒中后上肢运动功能康复中的应用研究},
+  journal = {中国康复医学杂志},
+  year    = {2020},
+  note    = {缺少卷号期号页码 — 需补充}
+}
+
+@article{wang2025eeg,
+  author  = {张颖},
+  title   = {脑卒中患者脑电信号与运动功能的相关性研究},
+  journal = {中国康复理论与实践},
+  year    = {2025},
+  note    = {缺少卷期页码 — 需补充}
+}
+
+%% ========= 技术手册与标准 =========
+
+@manual{stm32h7_rm,
+  title        = {RM0433: Reference Manual for STM32H723/733/735/730xx and STM32H725/730xx},
+  organization = {STMicroelectronics},
+  year         = {2024},
+  note         = {文档编号 RM0433 Rev 8}
+}
+
+@manual{stm32h7_ds,
+  title        = {STM32H723xE/G Datasheet: Arm®-based 32-bit MCU},
+  organization = {STMicroelectronics},
+  year         = {2023},
+  note         = {文档编号 DS12923}
+}
+
+@manual{bmi088_ds,
+  title        = {BMI088: 6-Axis Inertial Measurement Unit Datasheet},
+  organization = {Bosch Sensortec},
+  year         = {2021},
+  note         = {文档编号 BST-BMI088-DS001}
+}
+
+@manual{ci1302_doc,
+  title        = {CI130x 系列芯片用户手册及AI语音交互模块开发指南},
+  organization = {云知声 / 亚博智能科技有限公司},
+  year         = {2025},
+  note         = {产品文档 — 需补充详细版本号}
+}
+
+@manual{sg90_ds,
+  title        = {SG90 Standard Micro Servo Datasheet},
+  organization = {Tower Pro},
+  year         = {2019},
+  note         = {工作电压 4.8-6.0 V，扭矩 1.2 kg·cm — 需补充官方文档链接}
+}
+
+@manual{ws2812_ds,
+  title        = {WS2812B Intelligent Control LED Datasheet (V5.1)},
+  organization = {Worldsemi Co., Ltd.},
+  year         = {2021}
+}
+
+@manual{dmmc02_um,
+  title        = {DM-MC02 电机控制核心板用户手册 V1.1},
+  organization = {深圳达妙科技有限公司},
+  year         = {2024},
+  note         = {板载 STM32H723VGT6，12-24V 输入，双5V DC-DC — 需补充官方链接}
+}
+
+%% ========= 算法与学术方法 =========
+
+@article{madgwick2011orientation,
+  author  = {Madgwick, S O H},
+  title   = {An efficient orientation filter for inertial and inertial/magnetic sensor arrays},
+  journal = {Report x-io and University of Bristol (UK)},
+  year    = {2010},
+  note    = {开源 AHRS 算法 — 需补充完整出版物信息}
+}
+
+%% ========= 国家标准与法规 =========
+
+@standard{gb9706_2020,
+  title        = {GB 9706.1-2020 医用电气设备 第1部分：基本安全和基本性能的通用要求},
+  organization = {国家市场监督管理总局 / 中国国家标准化管理委员会},
+  year         = {2020}
+}
+
+@standard{yyt0287_2017,
+  title        = {YY/T 0287-2017 医疗器械 质量管理体系 用于法规的要求},
+  organization = {国家食品药品监督管理总局},
+  year         = {2017}
+}
+
+@standard{iec62304,
+  title        = {IEC 62304:2006+AMD1:2015  Medical device software — Software life cycle processes},
+  organization = {International Electrotechnical Commission},
+  year         = {2015}
+}
