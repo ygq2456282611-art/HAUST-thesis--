@@ -2,13 +2,10 @@
 %  附录
 % ============================================================
 \chapter{语音命令/播报词表}
-
-表~\ref{tab:full_cmd_list} 列出了CI1302语音模块固件中配置的全部命令词与播报词，共73条，对应发送协议帧的TYPE和ID字段。模块通过识别帧头0xAA和0x55、校验帧尾0xFB实现对协议帧的解析与响应。
-
-\begin{center}
+\vspace{-1.5em}
+\centering
+\setlength{\LTpre}{0pt}
 \begin{longtable}{p{2.5cm} p{2.2cm} p{5.5cm} p{3.5cm}}
-\caption{语音命令词与播报词完整列表}
-\label{tab:full_cmd_list}
 \\
 \toprule[1.5pt]
 \textbf{命令词} & \textbf{功能类型} & \textbf{播报语句} & \textbf{发送协议} \\
@@ -22,7 +19,7 @@
 \endhead
 
 \midrule[1pt]
-\multicolumn{4}{r}{\small 接下一页\ldots} \\
+\multicolumn{4}{r}{\small 续下页} \\
 \endfoot
 
 \bottomrule[1.5pt]
@@ -92,4 +89,3 @@
 完整训练模式   & 播报语   & 成功进入完整训练模式             & AA 55 FF 2C FB  \\
 自选模式   & 播报语   & 成功进入自选模式                 & AA 55 FF 2D FB  \\
 \end{longtable}
-\end{center}
