@@ -86,7 +86,7 @@ Z轴 & 垂直芯片表面指向前方 & 绕前后轴的旋转（侧倾/耳朵靠
 
 系统的姿态估计在最新的实现中采用了四元数融合框架。与早期开发中按轴分别采用卡尔曼滤波、纯陀螺仪积分和加速度计反算的三种独立策略不同，当前版本基于四元数姿态表示统一处理所有旋转自由度。
 
-四元数是复数在四维空间中的推广形式~\cite{madgwick2011orientation}，由一个标量部分和一个三维向量部分组成，通常记为$\mathbf{q} = q_0 + q_1\mathbf{i} + q_2\mathbf{j} + q_3\mathbf{k}$，其中$q_0$为实部，$(q_1, q_2, q_3)$为虚部，$\mathbf{i},\mathbf{j},\mathbf{k}$满足$\mathbf{i}^2=\mathbf{j}^2=\mathbf{k}^2=\mathbf{ijk}=-1$。当用于姿态表示时，单位四元数（$|\mathbf{q}|=1$）将三维空间中的任意旋转描述为绕单位轴$\mathbf{u}$转动角度$\theta$的形式：$\mathbf{q} = [\cos(\theta/2),\; \mathbf{u}\sin(\theta/2)]$。
+四元数是复数在四维空间中的推广形式~\cite{madgwick2011orientation,han2011novel}，由一个标量部分和一个三维向量部分组成，通常记为$\mathbf{q} = q_0 + q_1\mathbf{i} + q_2\mathbf{j} + q_3\mathbf{k}$，其中$q_0$为实部，$(q_1, q_2, q_3)$为虚部，$\mathbf{i},\mathbf{j},\mathbf{k}$满足$\mathbf{i}^2=\mathbf{j}^2=\mathbf{k}^2=\mathbf{ijk}=-1$。当用于姿态表示时，单位四元数（$|\mathbf{q}|=1$）将三维空间中的任意旋转描述为绕单位轴$\mathbf{u}$转动角度$\theta$的形式：$\mathbf{q} = [\cos(\theta/2),\; \mathbf{u}\sin(\theta/2)]$。
 
 四元数姿态更新的核心是联系角速度测量值与姿态变化速率的微分方程。BMI088陀螺仪提供的是三轴角速度向量$\boldsymbol{\omega}_s = [\omega_{sx}, \omega_{sy}, \omega_{sz}]$，将其表示为纯四元数$\boldsymbol{\omega} = (0, \omega_{sx}, \omega_{sy}, \omega_{sz})$后，姿态四元数随时间的变化率由式\ref{eq:quat_diff}给出：
 
