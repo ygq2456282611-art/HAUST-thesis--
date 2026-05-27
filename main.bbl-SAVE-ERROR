@@ -1,0 +1,1613 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{thayabaranathan2023global}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=f40ad384a4026a2f4cdf1e86b4695581}{%
+           family={Thayabaranathan},
+           familyi={T\bibinitperiod},
+           given={Tharshanah},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e88b4230bd6825f63e2e2b5ee1a8049c}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Joosup},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f85aad79c59378cd9baa26ba656ad771}{%
+           family={Olaiya},
+           familyi={O\bibinitperiod},
+           given={Muideen\bibnamedelima T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \true{morenamea}
+      \name{namea}{3}{}{%
+        {{hash=f40ad384a4026a2f4cdf1e86b4695581}{%
+           family={Thayabaranathan},
+           familyi={T\bibinitperiod},
+           given={Tharshanah},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e88b4230bd6825f63e2e2b5ee1a8049c}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Joosup},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f85aad79c59378cd9baa26ba656ad771}{%
+           family={Olaiya},
+           familyi={O\bibinitperiod},
+           given={Muideen\bibnamedelima T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{133a4b1fd1c67a712e9e76bf68abfc6b}
+      \strng{fullhash}{06038fef731a66fe141da09edc3ba656}
+      \strng{fullhashraw}{06038fef731a66fe141da09edc3ba656}
+      \strng{bibnamehash}{06038fef731a66fe141da09edc3ba656}
+      \strng{authorbibnamehash}{06038fef731a66fe141da09edc3ba656}
+      \strng{authornamehash}{133a4b1fd1c67a712e9e76bf68abfc6b}
+      \strng{authorfullhash}{06038fef731a66fe141da09edc3ba656}
+      \strng{authorfullhashraw}{06038fef731a66fe141da09edc3ba656}
+      \strng{nameabibnamehash}{06038fef731a66fe141da09edc3ba656}
+      \strng{nameanamehash}{133a4b1fd1c67a712e9e76bf68abfc6b}
+      \strng{nameafullhash}{06038fef731a66fe141da09edc3ba656}
+      \strng{nameafullhashraw}{06038fef731a66fe141da09edc3ba656}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Stroke}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Global stroke statistics 2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{18}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{378\bibrangedash 382}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1177/17474930221123175
+      \endverb
+      \keyw{thayabaranathan2023global}
+    \endentry
+    \entry{ji2025stroke}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2fe0a135c40680665adef2f1d69153f8}{%
+           family={吉训明},
+           familyi={吉\bibinitperiod}}}%
+        {{hash=1aa1de46771cd0bccb01406fc18f0700}{%
+           family={国家卫生健康委加强脑卒中防治工作减少百万新发残疾工程专家委员会},
+           familyi={国\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=2fe0a135c40680665adef2f1d69153f8}{%
+           family={吉训明},
+           familyi={吉\bibinitperiod}}}%
+        {{hash=1aa1de46771cd0bccb01406fc18f0700}{%
+           family={国家卫生健康委加强脑卒中防治工作减少百万新发残疾工程专家委员会},
+           familyi={国\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{a8965705bc9de385459acdb35610702f}
+      \strng{fullhash}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{fullhashraw}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{bibnamehash}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{authorbibnamehash}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{authornamehash}{a8965705bc9de385459acdb35610702f}
+      \strng{authorfullhash}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{authorfullhashraw}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{nameabibnamehash}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{nameanamehash}{a8965705bc9de385459acdb35610702f}
+      \strng{nameafullhash}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \strng{nameafullhashraw}{2cc8a6ada63c0df1b4b383ab103ff5d2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{首都医科大学学报}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{3}
+      \field{title}{《2024年中国脑卒中防治报告》概要}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{46}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.3969/j.issn.1006-7795.2025.06.001
+      \endverb
+      \keyw{ji2025stroke}
+    \endentry
+    \entry{meng2025stroke}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=8921710cf2c76834fca68c84a3e13fa4}{%
+           family={孟喆},
+           familyi={孟\bibinitperiod}}}%
+        {{hash=b0637f1f6bcb8390a3d00164000a71c4}{%
+           family={王琳},
+           familyi={王\bibinitperiod}}}%
+        {{hash=32b18a693e0414be3ba7577c2a8dce06}{%
+           family={陈梅},
+           familyi={陈\bibinitperiod}}}%
+        {{hash=aaff9fd34dca1f71ee02c43e563c7d40}{%
+           family={胡彦桐},
+           familyi={胡\bibinitperiod}}}%
+        {{hash=9f0439ddc7603e9fc58378227ef1e877}{%
+           family={张智},
+           familyi={张\bibinitperiod}}}%
+        {{hash=23ef3ac9316a2430c9c12d289c614740}{%
+           family={赵武},
+           familyi={赵\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=8921710cf2c76834fca68c84a3e13fa4}{%
+           family={孟喆},
+           familyi={孟\bibinitperiod}}}%
+        {{hash=b0637f1f6bcb8390a3d00164000a71c4}{%
+           family={王琳},
+           familyi={王\bibinitperiod}}}%
+        {{hash=32b18a693e0414be3ba7577c2a8dce06}{%
+           family={陈梅},
+           familyi={陈\bibinitperiod}}}%
+        {{hash=aaff9fd34dca1f71ee02c43e563c7d40}{%
+           family={胡彦桐},
+           familyi={胡\bibinitperiod}}}%
+        {{hash=9f0439ddc7603e9fc58378227ef1e877}{%
+           family={张智},
+           familyi={张\bibinitperiod}}}%
+        {{hash=23ef3ac9316a2430c9c12d289c614740}{%
+           family={赵武},
+           familyi={赵\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{c4f4f5f4e2ca8f39cf5880fa0646d96f}
+      \strng{fullhash}{6a0497ee3ec57f63bf2d16869a0916c6}
+      \strng{fullhashraw}{6a0497ee3ec57f63bf2d16869a0916c6}
+      \strng{bibnamehash}{11669cac8301e5f314c3b7c9de967838}
+      \strng{authorbibnamehash}{11669cac8301e5f314c3b7c9de967838}
+      \strng{authornamehash}{c4f4f5f4e2ca8f39cf5880fa0646d96f}
+      \strng{authorfullhash}{6a0497ee3ec57f63bf2d16869a0916c6}
+      \strng{authorfullhashraw}{6a0497ee3ec57f63bf2d16869a0916c6}
+      \strng{nameabibnamehash}{11669cac8301e5f314c3b7c9de967838}
+      \strng{nameanamehash}{c4f4f5f4e2ca8f39cf5880fa0646d96f}
+      \strng{nameafullhash}{6a0497ee3ec57f63bf2d16869a0916c6}
+      \strng{nameafullhashraw}{6a0497ee3ec57f63bf2d16869a0916c6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{辽宁中医杂志}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{2}
+      \field{title}{150例脑卒中恢复期患者临床治疗效果及预后影响因素研究}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{53}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{pages}{17\bibrangedash 20}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.13192/j.issn.1000-1719.2026.02.004
+      \endverb
+      \keyw{meng2025stroke}
+    \endentry
+    \entry{rowe2021ivis}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=81a97c730043520e0a6212b77e86b82b}{%
+           family={Rowe},
+           familyi={R\bibinitperiod},
+           given={F\bibnamedelima J},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9b80abc59fc64235690cefefbcfec1c3}{%
+           family={Hepworth},
+           familyi={H\bibinitperiod},
+           given={L\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=81a97c730043520e0a6212b77e86b82b}{%
+           family={Rowe},
+           familyi={R\bibinitperiod},
+           given={F\bibnamedelima J},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9b80abc59fc64235690cefefbcfec1c3}{%
+           family={Hepworth},
+           familyi={H\bibinitperiod},
+           given={L\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7b5308ba4582fe468ccd0b16622616f4}
+      \strng{fullhash}{17e181aac9992df2b48048de6e48076f}
+      \strng{fullhashraw}{17e181aac9992df2b48048de6e48076f}
+      \strng{bibnamehash}{17e181aac9992df2b48048de6e48076f}
+      \strng{authorbibnamehash}{17e181aac9992df2b48048de6e48076f}
+      \strng{authornamehash}{7b5308ba4582fe468ccd0b16622616f4}
+      \strng{authorfullhash}{17e181aac9992df2b48048de6e48076f}
+      \strng{authorfullhashraw}{17e181aac9992df2b48048de6e48076f}
+      \strng{nameabibnamehash}{17e181aac9992df2b48048de6e48076f}
+      \strng{nameanamehash}{7b5308ba4582fe468ccd0b16622616f4}
+      \strng{nameafullhash}{17e181aac9992df2b48048de6e48076f}
+      \strng{nameafullhashraw}{17e181aac9992df2b48048de6e48076f}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuro-Ophthalmology}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{The Impact of Visual Impairment in Stroke (IVIS) Study -- Evidence of Reproducibility}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{45}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{101\bibrangedash 109}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/01658107.2020.1849317
+      \endverb
+      \keyw{rowe2021ivis}
+    \endentry
+    \entry{liu2023vision}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a14e39410a9c6d72128e0879f56dec6c}{%
+           family={王云霞},
+           familyi={王\bibinitperiod}}}%
+        {{hash=458d061fc48a33a7455152023b81a06f}{%
+           family={张国增},
+           familyi={张\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=a14e39410a9c6d72128e0879f56dec6c}{%
+           family={王云霞},
+           familyi={王\bibinitperiod}}}%
+        {{hash=458d061fc48a33a7455152023b81a06f}{%
+           family={张国增},
+           familyi={张\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{925d8032c00ea6a55bdff32ae439a6b4}
+      \strng{fullhash}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{fullhashraw}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{bibnamehash}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{authorbibnamehash}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{authornamehash}{925d8032c00ea6a55bdff32ae439a6b4}
+      \strng{authorfullhash}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{authorfullhashraw}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{nameabibnamehash}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{nameanamehash}{925d8032c00ea6a55bdff32ae439a6b4}
+      \strng{nameafullhash}{b3256b134c762d6505bd66ecef4fa559}
+      \strng{nameafullhashraw}{b3256b134c762d6505bd66ecef4fa559}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{护理研究}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{22}
+      \field{title}{脑卒中后视觉障碍研究进展}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{37}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{4130\bibrangedash 4136}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.12102/j.issn.1009-6493.2023.22.000
+      \endverb
+      \keyw{liu2023vision}
+    \endentry
+    \entry{liu2025headmount}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=fbc069954d2a23779c8d5da069710024}{%
+           family={刘瑞芳},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=fbc069954d2a23779c8d5da069710024}{%
+           family={刘瑞芳},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{fbc069954d2a23779c8d5da069710024}
+      \strng{fullhash}{fbc069954d2a23779c8d5da069710024}
+      \strng{fullhashraw}{fbc069954d2a23779c8d5da069710024}
+      \strng{bibnamehash}{fbc069954d2a23779c8d5da069710024}
+      \strng{authorbibnamehash}{fbc069954d2a23779c8d5da069710024}
+      \strng{authornamehash}{fbc069954d2a23779c8d5da069710024}
+      \strng{authorfullhash}{fbc069954d2a23779c8d5da069710024}
+      \strng{authorfullhashraw}{fbc069954d2a23779c8d5da069710024}
+      \strng{nameabibnamehash}{fbc069954d2a23779c8d5da069710024}
+      \strng{nameanamehash}{fbc069954d2a23779c8d5da069710024}
+      \strng{nameafullhash}{fbc069954d2a23779c8d5da069710024}
+      \strng{nameafullhashraw}{fbc069954d2a23779c8d5da069710024}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{中华物理医学与康复杂志}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{10}
+      \field{title}{头戴式视觉训练对脑卒中后肢体功能康复的影响}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{47}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.3969/j.issn.2097-5457.2025.10.004
+      \endverb
+      \keyw{liu2025headmount}
+    \endentry
+    \entry{rowe2025eso}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=81a97c730043520e0a6212b77e86b82b}{%
+           family={Rowe},
+           familyi={R\bibinitperiod},
+           given={F\bibnamedelima J},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9b80abc59fc64235690cefefbcfec1c3}{%
+           family={Hepworth},
+           familyi={H\bibinitperiod},
+           given={L\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5f35c49ea1c24f4c184a5a511296c2c3}{%
+           family={Coco-Martin},
+           familyi={C\bibinithyphendelim M\bibinitperiod},
+           given={M\bibnamedelima B},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \true{morenamea}
+      \name{namea}{3}{}{%
+        {{hash=81a97c730043520e0a6212b77e86b82b}{%
+           family={Rowe},
+           familyi={R\bibinitperiod},
+           given={F\bibnamedelima J},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9b80abc59fc64235690cefefbcfec1c3}{%
+           family={Hepworth},
+           familyi={H\bibinitperiod},
+           given={L\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5f35c49ea1c24f4c184a5a511296c2c3}{%
+           family={Coco-Martin},
+           familyi={C\bibinithyphendelim M\bibinitperiod},
+           given={M\bibnamedelima B},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7b5308ba4582fe468ccd0b16622616f4}
+      \strng{fullhash}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{fullhashraw}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{bibnamehash}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{authorbibnamehash}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{authornamehash}{7b5308ba4582fe468ccd0b16622616f4}
+      \strng{authorfullhash}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{authorfullhashraw}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{nameabibnamehash}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{nameanamehash}{7b5308ba4582fe468ccd0b16622616f4}
+      \strng{nameafullhash}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \strng{nameafullhashraw}{3d9ad5304d2a228dcaa70f5e4298d9ba}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Stroke Journal}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{European Stroke Organisation (ESO) guideline on visual impairment in stroke}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{10}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{213\bibrangedash 235}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1177/23969873251314693
+      \endverb
+      \keyw{rowe2025eso}
+    \endentry
+    \entry{pollock2011interventions}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=6950f44d1540a3a4861894304405ffaf}{%
+           family={Pollock},
+           familyi={P\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \true{morenamea}
+      \name{namea}{1}{}{%
+        {{hash=6950f44d1540a3a4861894304405ffaf}{%
+           family={Pollock},
+           familyi={P\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{649867133f2d3a4896ed978346841175}
+      \strng{fullhash}{649867133f2d3a4896ed978346841175}
+      \strng{fullhashraw}{649867133f2d3a4896ed978346841175}
+      \strng{bibnamehash}{649867133f2d3a4896ed978346841175}
+      \strng{authorbibnamehash}{649867133f2d3a4896ed978346841175}
+      \strng{authornamehash}{649867133f2d3a4896ed978346841175}
+      \strng{authorfullhash}{649867133f2d3a4896ed978346841175}
+      \strng{authorfullhashraw}{649867133f2d3a4896ed978346841175}
+      \strng{nameabibnamehash}{649867133f2d3a4896ed978346841175}
+      \strng{nameanamehash}{649867133f2d3a4896ed978346841175}
+      \strng{nameafullhash}{649867133f2d3a4896ed978346841175}
+      \strng{nameafullhashraw}{649867133f2d3a4896ed978346841175}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cochrane Database of Systematic Reviews}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{10}
+      \field{title}{Interventions for disorders of eye movement in patients with stroke}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{CD008389}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/14651858.CD008389.pub2
+      \endverb
+      \keyw{pollock2011interventions}
+    \endentry
+    \entry{namgung2024customized}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=a51f1a71197bb795d71ef36e9fbaecfd}{%
+           family={Namgung},
+           familyi={N\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1a48868d4b7e2996a44219cbaef3fb20}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c635388c28ab3c4cbc8fdb1762f98052}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y\bibnamedelima H},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=b8772e4dea48fe1be813adf44589f39b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y\bibnamedelima S},
+           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=94a8a046d2c160a59506e79f0ddda74c}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={E\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e5a7bd235818499e6c100cc1efc019b1}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={J\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=221edc260255b2224af38516420eff23}{%
+           family={Sasaki},
+           familyi={S\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6cf6952d935435e5ed1ea7eae7534302}{%
+           family={Watanabe},
+           familyi={W\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8f92d7b3394ed1d2bc86163ad95a7472}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={D\bibnamedelima W},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \name{namea}{9}{}{%
+        {{hash=a51f1a71197bb795d71ef36e9fbaecfd}{%
+           family={Namgung},
+           familyi={N\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1a48868d4b7e2996a44219cbaef3fb20}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c635388c28ab3c4cbc8fdb1762f98052}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y\bibnamedelima H},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=b8772e4dea48fe1be813adf44589f39b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Y\bibnamedelima S},
+           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=94a8a046d2c160a59506e79f0ddda74c}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={E\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e5a7bd235818499e6c100cc1efc019b1}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={J\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=221edc260255b2224af38516420eff23}{%
+           family={Sasaki},
+           familyi={S\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6cf6952d935435e5ed1ea7eae7534302}{%
+           family={Watanabe},
+           familyi={W\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8f92d7b3394ed1d2bc86163ad95a7472}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={D\bibnamedelima W},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a04ea0eb7379ec2c8235e73668152f59}
+      \strng{fullhash}{a51968751b9085b03566e4efe58b5044}
+      \strng{fullhashraw}{a51968751b9085b03566e4efe58b5044}
+      \strng{bibnamehash}{2e78cb88c442e9acc06e54ac07d4931b}
+      \strng{authorbibnamehash}{2e78cb88c442e9acc06e54ac07d4931b}
+      \strng{authornamehash}{a04ea0eb7379ec2c8235e73668152f59}
+      \strng{authorfullhash}{a51968751b9085b03566e4efe58b5044}
+      \strng{authorfullhashraw}{a51968751b9085b03566e4efe58b5044}
+      \strng{nameabibnamehash}{2e78cb88c442e9acc06e54ac07d4931b}
+      \strng{nameanamehash}{a04ea0eb7379ec2c8235e73668152f59}
+      \strng{nameafullhash}{a51968751b9085b03566e4efe58b5044}
+      \strng{nameafullhashraw}{a51968751b9085b03566e4efe58b5044}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Clinical Neurology}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{Customized Visual Discrimination Digital Therapy According to Visual Field Defects in Chronic Stroke Patients}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{20}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{509\bibrangedash 518}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3988/jcn.2024.0015
+      \endverb
+      \keyw{namgung2024customized}
+    \endentry
+    \entry{zhang2024visual}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=83301d73b86b6fa13b3fe123cee70bf1}{%
+           family={张倩},
+           familyi={张\bibinitperiod}}}%
+        {{hash=92c6905577589780787446018bec3b30}{%
+           family={孙洁},
+           familyi={孙\bibinitperiod}}}%
+        {{hash=f532c9927e990302eefe9b80536fcabc}{%
+           family={刘婷慧},
+           familyi={刘\bibinitperiod}}}%
+        {{hash=d9651947397c8f5f6573a507c5a175af}{%
+           family={高盼盼},
+           familyi={高\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=83301d73b86b6fa13b3fe123cee70bf1}{%
+           family={张倩},
+           familyi={张\bibinitperiod}}}%
+        {{hash=92c6905577589780787446018bec3b30}{%
+           family={孙洁},
+           familyi={孙\bibinitperiod}}}%
+        {{hash=f532c9927e990302eefe9b80536fcabc}{%
+           family={刘婷慧},
+           familyi={刘\bibinitperiod}}}%
+        {{hash=d9651947397c8f5f6573a507c5a175af}{%
+           family={高盼盼},
+           familyi={高\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{5cf57c5488a9569a014248924ded3240}
+      \strng{fullhash}{e610b3a09eaca256d4f1606fe5eed49d}
+      \strng{fullhashraw}{e610b3a09eaca256d4f1606fe5eed49d}
+      \strng{bibnamehash}{eb42ec931ab8024779211862ad7291d3}
+      \strng{authorbibnamehash}{eb42ec931ab8024779211862ad7291d3}
+      \strng{authornamehash}{5cf57c5488a9569a014248924ded3240}
+      \strng{authorfullhash}{e610b3a09eaca256d4f1606fe5eed49d}
+      \strng{authorfullhashraw}{e610b3a09eaca256d4f1606fe5eed49d}
+      \strng{nameabibnamehash}{eb42ec931ab8024779211862ad7291d3}
+      \strng{nameanamehash}{5cf57c5488a9569a014248924ded3240}
+      \strng{nameafullhash}{e610b3a09eaca256d4f1606fe5eed49d}
+      \strng{nameafullhashraw}{e610b3a09eaca256d4f1606fe5eed49d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{中国康复}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{11}
+      \field{title}{视觉刺激训练在脑卒中后重度认知障碍患者中的应用研究}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{39}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{655\bibrangedash 659}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.3870/zgkf.2024.11.003
+      \endverb
+      \keyw{zhang2024visual}
+    \endentry
+    \entry{sun2024cognitive}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=630bb7ef9f9518a686342e8d44187d60}{%
+           family={武继敏},
+           familyi={武\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=630bb7ef9f9518a686342e8d44187d60}{%
+           family={武继敏},
+           familyi={武\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{fullhash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{fullhashraw}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{bibnamehash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{authorbibnamehash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{authornamehash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{authorfullhash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{authorfullhashraw}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{nameabibnamehash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{nameanamehash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{nameafullhash}{630bb7ef9f9518a686342e8d44187d60}
+      \strng{nameafullhashraw}{630bb7ef9f9518a686342e8d44187d60}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{山东中医药大学}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{基于OT思维的运动训练对脑卒中患者平衡功能及执行功能的影响}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.27282/d.cnki.gsdzu.2023.000459
+      \endverb
+      \keyw{sun2024cognitive}
+    \endentry
+    \entry{sun2024pursuit}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=298d52c4949444e23c32818845c80ea7}{%
+           family={王雪},
+           familyi={王\bibinitperiod}}}%
+        {{hash=9cc110b86b7789e4196cebb726dde74b}{%
+           family={王立平},
+           familyi={王\bibinitperiod}}}%
+        {{hash=93f1d9db1f350b59f435d4614e377bea}{%
+           family={宋宁},
+           familyi={宋\bibinitperiod}}}%
+        {{hash=11ccee3ac8c17c7e3fbf62f129ff2757}{%
+           family={等},
+           familyi={等\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=298d52c4949444e23c32818845c80ea7}{%
+           family={王雪},
+           familyi={王\bibinitperiod}}}%
+        {{hash=9cc110b86b7789e4196cebb726dde74b}{%
+           family={王立平},
+           familyi={王\bibinitperiod}}}%
+        {{hash=93f1d9db1f350b59f435d4614e377bea}{%
+           family={宋宁},
+           familyi={宋\bibinitperiod}}}%
+        {{hash=11ccee3ac8c17c7e3fbf62f129ff2757}{%
+           family={等},
+           familyi={等\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{29b311e2c0bfb6872210d7515527eb6e}
+      \strng{fullhash}{0c377eec3bb054ecb2d44ec1b0f7fcf2}
+      \strng{fullhashraw}{0c377eec3bb054ecb2d44ec1b0f7fcf2}
+      \strng{bibnamehash}{3d6048f06bf274ed4ff117d078d107d1}
+      \strng{authorbibnamehash}{3d6048f06bf274ed4ff117d078d107d1}
+      \strng{authornamehash}{29b311e2c0bfb6872210d7515527eb6e}
+      \strng{authorfullhash}{0c377eec3bb054ecb2d44ec1b0f7fcf2}
+      \strng{authorfullhashraw}{0c377eec3bb054ecb2d44ec1b0f7fcf2}
+      \strng{nameabibnamehash}{3d6048f06bf274ed4ff117d078d107d1}
+      \strng{nameanamehash}{29b311e2c0bfb6872210d7515527eb6e}
+      \strng{nameafullhash}{0c377eec3bb054ecb2d44ec1b0f7fcf2}
+      \strng{nameafullhashraw}{0c377eec3bb054ecb2d44ec1b0f7fcf2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{中国康复理论与实践}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{6}
+      \field{title}{脑卒中后眼球运动障碍的行为视觉训练效果}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{30}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{726\bibrangedash 730}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.3969/j.issn.1006-9771.2024.06.013
+      \endverb
+      \keyw{sun2024pursuit}
+    \endentry
+    \entry{zheng2025stroke}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ff5c9548b43db18631115305ed5458c8}{%
+           family={郑苗},
+           familyi={郑\bibinitperiod}}}%
+        {{hash=0acf75ddc6c846d7ef6700e0c89e91b7}{%
+           family={颜辉},
+           familyi={颜\bibinitperiod}}}%
+        {{hash=1ec8b9a79ddaff64bb545d975e96fbd4}{%
+           family={程斐然},
+           familyi={程\bibinitperiod}}}%
+        {{hash=11ccee3ac8c17c7e3fbf62f129ff2757}{%
+           family={等},
+           familyi={等\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=ff5c9548b43db18631115305ed5458c8}{%
+           family={郑苗},
+           familyi={郑\bibinitperiod}}}%
+        {{hash=0acf75ddc6c846d7ef6700e0c89e91b7}{%
+           family={颜辉},
+           familyi={颜\bibinitperiod}}}%
+        {{hash=1ec8b9a79ddaff64bb545d975e96fbd4}{%
+           family={程斐然},
+           familyi={程\bibinitperiod}}}%
+        {{hash=11ccee3ac8c17c7e3fbf62f129ff2757}{%
+           family={等},
+           familyi={等\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{8cc76894e1cef50bf9098d1a56c5ee0f}
+      \strng{fullhash}{cfd18052e84847a0d77bff7a49cd2601}
+      \strng{fullhashraw}{cfd18052e84847a0d77bff7a49cd2601}
+      \strng{bibnamehash}{7e0b2470a1fb3cc517988ef1187816fb}
+      \strng{authorbibnamehash}{7e0b2470a1fb3cc517988ef1187816fb}
+      \strng{authornamehash}{8cc76894e1cef50bf9098d1a56c5ee0f}
+      \strng{authorfullhash}{cfd18052e84847a0d77bff7a49cd2601}
+      \strng{authorfullhashraw}{cfd18052e84847a0d77bff7a49cd2601}
+      \strng{nameabibnamehash}{7e0b2470a1fb3cc517988ef1187816fb}
+      \strng{nameanamehash}{8cc76894e1cef50bf9098d1a56c5ee0f}
+      \strng{nameafullhash}{cfd18052e84847a0d77bff7a49cd2601}
+      \strng{nameafullhashraw}{cfd18052e84847a0d77bff7a49cd2601}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{中国实用神经疾病杂志}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{1}
+      \field{title}{脑卒中后视力障碍的研究进展}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{28}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{114\bibrangedash 118}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.12083/SYSJ.231395
+      \endverb
+      \keyw{zheng2025stroke}
+    \endentry
+    \entry{herron2015review}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=075c78ba455eeb937a7dc9a3b34af278}{%
+           family={Herron},
+           familyi={H\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \true{morenamea}
+      \name{namea}{1}{}{%
+        {{hash=075c78ba455eeb937a7dc9a3b34af278}{%
+           family={Herron},
+           familyi={H\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{fullhash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{fullhashraw}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{bibnamehash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{authorbibnamehash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{authornamehash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{authorfullhash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{authorfullhashraw}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{nameabibnamehash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{nameanamehash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{nameafullhash}{193d99d36dd6ba1bce9c4cececa08c27}
+      \strng{nameafullhashraw}{193d99d36dd6ba1bce9c4cececa08c27}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Journal of Occupational Therapy}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Review of experience with a collaborative eye care clinic in inpatient stroke rehabilitation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{78}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{347\bibrangedash 353}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1179/1074935715Z.00000000065
+      \endverb
+      \keyw{herron2015review}
+    \endentry
+    \entry{hanna2017treatment}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5241ffcb2fc121f0ed90e1019b8220e8}{%
+           family={Hanna},
+           familyi={H\bibinitperiod},
+           given={K\bibnamedelima L},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9b80abc59fc64235690cefefbcfec1c3}{%
+           family={Hepworth},
+           familyi={H\bibinitperiod},
+           given={L\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=81a97c730043520e0a6212b77e86b82b}{%
+           family={Rowe},
+           familyi={R\bibinitperiod},
+           given={F\bibnamedelima J},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=5241ffcb2fc121f0ed90e1019b8220e8}{%
+           family={Hanna},
+           familyi={H\bibinitperiod},
+           given={K\bibnamedelima L},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9b80abc59fc64235690cefefbcfec1c3}{%
+           family={Hepworth},
+           familyi={H\bibinitperiod},
+           given={L\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=81a97c730043520e0a6212b77e86b82b}{%
+           family={Rowe},
+           familyi={R\bibinitperiod},
+           given={F\bibnamedelima J},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0c435816c840a15d75a0377551114bd6}
+      \strng{fullhash}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{fullhashraw}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{bibnamehash}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{authorbibnamehash}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{authornamehash}{0c435816c840a15d75a0377551114bd6}
+      \strng{authorfullhash}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{authorfullhashraw}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{nameabibnamehash}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{nameanamehash}{0c435816c840a15d75a0377551114bd6}
+      \strng{nameafullhash}{ca346a25808a855b0c92d0da169fee8f}
+      \strng{nameafullhashraw}{ca346a25808a855b0c92d0da169fee8f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Brain and Behavior}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{The treatment methods for post-stroke visual impairment: A systematic review}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{e00682}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/brb3.682
+      \endverb
+      \keyw{hanna2017treatment}
+    \endentry
+    \entry{trauzettel2011current}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9b07697aae80819f89cb4f55513cdb3b}{%
+           family={Trauzettel-Klosinski},
+           familyi={T\bibinithyphendelim K\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=9b07697aae80819f89cb4f55513cdb3b}{%
+           family={Trauzettel-Klosinski},
+           familyi={T\bibinithyphendelim K\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{fullhash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{fullhashraw}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{bibnamehash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{authorbibnamehash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{authornamehash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{authorfullhash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{authorfullhashraw}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{nameabibnamehash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{nameanamehash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{nameafullhash}{9b07697aae80819f89cb4f55513cdb3b}
+      \strng{nameafullhashraw}{9b07697aae80819f89cb4f55513cdb3b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Deutsches Ärzteblatt International}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{51-52}
+      \field{title}{Current methods of visual rehabilitation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{108}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{871\bibrangedash 878}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.3238/arztebl.2011.0871
+      \endverb
+      \keyw{trauzettel2011current}
+    \endentry
+    \entry{zhang2020vr}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=2110f7e39d5c1e0b9ed4db79527a7c81}{%
+           family={黄倩倩},
+           familyi={黄\bibinitperiod}}}%
+        {{hash=d7fe4e20e0ba724af252a4f036976dc8}{%
+           family={蒋松鹤},
+           familyi={蒋\bibinitperiod}}}%
+        {{hash=96016a601395b824daf74ea4f3bd4c57}{%
+           family={陈晓龙},
+           familyi={陈\bibinitperiod}}}%
+        {{hash=11ccee3ac8c17c7e3fbf62f129ff2757}{%
+           family={等},
+           familyi={等\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=2110f7e39d5c1e0b9ed4db79527a7c81}{%
+           family={黄倩倩},
+           familyi={黄\bibinitperiod}}}%
+        {{hash=d7fe4e20e0ba724af252a4f036976dc8}{%
+           family={蒋松鹤},
+           familyi={蒋\bibinitperiod}}}%
+        {{hash=96016a601395b824daf74ea4f3bd4c57}{%
+           family={陈晓龙},
+           familyi={陈\bibinitperiod}}}%
+        {{hash=11ccee3ac8c17c7e3fbf62f129ff2757}{%
+           family={等},
+           familyi={等\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{5063f810f1a879c90988b1bb57348c01}
+      \strng{fullhash}{6e251334e5e3fe71bed147276512a470}
+      \strng{fullhashraw}{6e251334e5e3fe71bed147276512a470}
+      \strng{bibnamehash}{8c8d8fc1be613d0764405b848d08b2b7}
+      \strng{authorbibnamehash}{8c8d8fc1be613d0764405b848d08b2b7}
+      \strng{authornamehash}{5063f810f1a879c90988b1bb57348c01}
+      \strng{authorfullhash}{6e251334e5e3fe71bed147276512a470}
+      \strng{authorfullhashraw}{6e251334e5e3fe71bed147276512a470}
+      \strng{nameabibnamehash}{8c8d8fc1be613d0764405b848d08b2b7}
+      \strng{nameanamehash}{5063f810f1a879c90988b1bb57348c01}
+      \strng{nameafullhash}{6e251334e5e3fe71bed147276512a470}
+      \strng{nameafullhashraw}{6e251334e5e3fe71bed147276512a470}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{中华物理医学与康复杂志}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{4}
+      \field{title}{虚拟现实技术在脑卒中康复中的应用现状}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{42}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{377\bibrangedash 380}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.3760/cma.j.issn.0254-1424.2020.04.021
+      \endverb
+      \keyw{zhang2020vr}
+    \endentry
+    \entry{sebeșan2021inertial}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d3954c314ac9ed5b20fcbd51c8bf138f}{%
+           family={Sebeșan},
+           familyi={S\bibinitperiod},
+           given={Ionut-Cristian},
+           giveni={I\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=2eb56eb85a641d31cb8b5b8032d62f96}{%
+           family={Dan-Marius},
+           familyi={D\bibinithyphendelim M\bibinitperiod},
+           given={Dobrea},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=d3954c314ac9ed5b20fcbd51c8bf138f}{%
+           family={Sebeșan},
+           familyi={S\bibinitperiod},
+           given={Ionut-Cristian},
+           giveni={I\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=2eb56eb85a641d31cb8b5b8032d62f96}{%
+           family={Dan-Marius},
+           familyi={D\bibinithyphendelim M\bibinitperiod},
+           given={Dobrea},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{67ca45a1dce0c4098095933e8fe32163}
+      \strng{fullhash}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{fullhashraw}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{bibnamehash}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{authorbibnamehash}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{authornamehash}{67ca45a1dce0c4098095933e8fe32163}
+      \strng{authorfullhash}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{authorfullhashraw}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{nameabibnamehash}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{nameanamehash}{67ca45a1dce0c4098095933e8fe32163}
+      \strng{nameafullhash}{511279c3dac7bb40b9ab861af3caaaee}
+      \strng{nameafullhashraw}{511279c3dac7bb40b9ab861af3caaaee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Imaging}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{12}
+      \field{title}{Using Inertial Sensors to Determine Head Motion — A Review}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{265}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/jimaging7120265
+      \endverb
+      \keyw{sebeșan2021inertial}
+    \endentry
+    \entry{strokerehab2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6fa95b1427af77b3d769ae9cb853382f}{%
+           family={Peter},
+           familyi={P\bibinitperiod}}}%
+        {{hash=da7451750c0572bd7944b6cbe79a7a8f}{%
+           family={Langhorne},
+           familyi={L\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=6fa95b1427af77b3d769ae9cb853382f}{%
+           family={Peter},
+           familyi={P\bibinitperiod}}}%
+        {{hash=da7451750c0572bd7944b6cbe79a7a8f}{%
+           family={Langhorne},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{6bfe9c27ca0677f0ece3f2b4808e02ec}
+      \strng{fullhash}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{fullhashraw}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{bibnamehash}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{authorbibnamehash}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{authornamehash}{6bfe9c27ca0677f0ece3f2b4808e02ec}
+      \strng{authorfullhash}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{authorfullhashraw}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{nameabibnamehash}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{nameanamehash}{6bfe9c27ca0677f0ece3f2b4808e02ec}
+      \strng{nameafullhash}{b8d288ed61e56b69a4b42f51519909f4}
+      \strng{nameafullhashraw}{b8d288ed61e56b69a4b42f51519909f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Lancet}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{9778}
+      \field{title}{Stroke rehabilitation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{377}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{1693\bibrangedash 1702}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/S0140-6736(11)60325-5
+      \endverb
+      \keyw{strokerehab2011}
+    \endentry
+    \entry{dmmc02_um}{manual}{}{}
+      \list{institution}{1}{%
+        {深圳达妙科技有限公司}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{organization}{1}{%
+        {深圳达妙科技有限公司}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{DM-MC02 电机控制核心板用户手册 V1.1}
+      \field{usera}{A}
+      \field{userd}{chinese}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \keyw{dmmc02_um}
+    \endentry
+    \entry{stm32h7_rm}{manual}{}{}
+      \list{institution}{1}{%
+        {STMicroelectronics}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {STMicroelectronics}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{note}{文档编号 RM0433 Rev 8}
+      \field{title}{RM0433: Reference Manual for STM32H723/733/735/730xx and STM32H725/730xx}
+      \field{usera}{A}
+      \field{userd}{english}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \keyw{stm32h7_rm}
+    \endentry
+    \entry{stm32h7_ds}{manual}{}{}
+      \list{institution}{1}{%
+        {STMicroelectronics}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {STMicroelectronics}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{note}{文档编号 DS12923}
+      \field{title}{STM32H723xE/G Datasheet: Arm{®}-based 32-bit MCU}
+      \field{usera}{A}
+      \field{userd}{english}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \keyw{stm32h7_ds}
+    \endentry
+    \entry{bmi088_ds}{manual}{}{}
+      \list{institution}{1}{%
+        {Bosch Sensortec}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Bosch Sensortec}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{note}{文档编号 BST-BMI088-DS001}
+      \field{title}{BMI088: 6-Axis Inertial Measurement Unit Datasheet}
+      \field{usera}{A}
+      \field{userd}{english}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \keyw{bmi088_ds}
+    \endentry
+    \entry{sg90_ds}{manual}{}{}
+      \list{institution}{1}{%
+        {Tower Pro}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Tower Pro}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{SG90 Standard Micro Servo Datasheet}
+      \field{usera}{A}
+      \field{userd}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \keyw{sg90_ds}
+    \endentry
+    \entry{ws2812_ds}{manual}{}{}
+      \list{institution}{1}{%
+        {Worldsemi Co., Ltd.}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Worldsemi Co., Ltd.}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{WS2812B Intelligent Control LED Datasheet (V5.1)}
+      \field{usera}{A}
+      \field{userd}{english}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \keyw{ws2812_ds}
+    \endentry
+    \entry{madgwick2011orientation}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=309b16b55802aeb77c0e4e69256e86fb}{%
+           family={Madgwick},
+           familyi={M\bibinitperiod},
+           given={S\bibnamedelima O\bibnamedelima H},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=309b16b55802aeb77c0e4e69256e86fb}{%
+           family={Madgwick},
+           familyi={M\bibinitperiod},
+           given={S\bibnamedelima O\bibnamedelima H},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{fullhash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{fullhashraw}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{bibnamehash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{authorbibnamehash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{authornamehash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{authorfullhash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{authorfullhashraw}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{nameabibnamehash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{nameanamehash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{nameafullhash}{309b16b55802aeb77c0e4e69256e86fb}
+      \strng{nameafullhashraw}{309b16b55802aeb77c0e4e69256e86fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Report x-io and University of Bristol (UK)}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{An efficient orientation filter for inertial and inertial/magnetic sensor arrays}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \keyw{madgwick2011orientation}
+    \endentry
+    \entry{han2011novel}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c8b58fc9ddb4f549ff38acd1ee6f8103}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Songlai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ff39f152ac114b0ee2a8657a71ab1df5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jinling},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=c8b58fc9ddb4f549ff38acd1ee6f8103}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Songlai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ff39f152ac114b0ee2a8657a71ab1df5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jinling},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{1f99afc55cbe38e8a0776f5e4a4bd79e}
+      \strng{fullhash}{913d6813288fbb955686e4012fdde33e}
+      \strng{fullhashraw}{913d6813288fbb955686e4012fdde33e}
+      \strng{bibnamehash}{913d6813288fbb955686e4012fdde33e}
+      \strng{authorbibnamehash}{913d6813288fbb955686e4012fdde33e}
+      \strng{authornamehash}{1f99afc55cbe38e8a0776f5e4a4bd79e}
+      \strng{authorfullhash}{913d6813288fbb955686e4012fdde33e}
+      \strng{authorfullhashraw}{913d6813288fbb955686e4012fdde33e}
+      \strng{nameabibnamehash}{913d6813288fbb955686e4012fdde33e}
+      \strng{nameanamehash}{1f99afc55cbe38e8a0776f5e4a4bd79e}
+      \strng{nameafullhash}{913d6813288fbb955686e4012fdde33e}
+      \strng{nameafullhashraw}{913d6813288fbb955686e4012fdde33e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Navigation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{A Novel Method to Integrate IMU and Magnetometers in Attitude and Heading Reference Systems}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{64}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{727\bibrangedash 738}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1017/S0373463311000233
+      \endverb
+      \keyw{han2011novel}
+    \endentry
+    \entry{ci1302_doc}{manual}{}{}
+      \list{institution}{1}{%
+        {云知声 / 亚博智能科技有限公司}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{organization}{1}{%
+        {云知声 / 亚博智能科技有限公司}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{CI130x 系列芯片用户手册及AI语音交互模块开发指南}
+      \field{usera}{A}
+      \field{userd}{chinese}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \keyw{ci1302_doc}
+    \endentry
+    \entry{gb9706_2020}{book}{}{}
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{organization}{1}{%
+        {国家市场监督管理总局 / 中国国家标准化管理委员会}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{standard}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{GB 9706.1-2020 医用电气设备 第1部分：基本安全和基本性能的通用要求}
+      \field{usera}{S}
+      \field{userd}{chinese}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \keyw{gb9706_2020,standard}
+    \endentry
+    \entry{yyt0287_2017}{book}{}{}
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{organization}{1}{%
+        {国家食品药品监督管理总局}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{standard}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{YY/T 0287-2017 医疗器械 质量管理体系 用于法规的要求}
+      \field{usera}{S}
+      \field{userd}{chinese}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{yyt0287_2017,standard}
+    \endentry
+    \entry{iec62304}{book}{}{}
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {International Electrotechnical Commission}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{standard}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{IEC 62304:2006+AMD1:2015 Medical device software --- Software life cycle processes}
+      \field{usera}{S}
+      \field{userd}{english}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \keyw{iec62304,standard}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
