@@ -1,0 +1,244 @@
+<mxfile host="Electron" agent="draw.io">
+  <diagram id="train_flow" name="单次训练完整流程">
+    <mxGraphModel dx="2184" dy="1567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统上电&lt;br&gt;初始化所有模块" vertex="1">
+          <mxGeometry height="120" width="290" x="680" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mode_select" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统模式选择状态&lt;br&gt;语音播报:&quot;按一下进入完整训练，按两下进入自选模式&quot;" vertex="1">
+          <mxGeometry height="120" width="291.5" x="679.5" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="start" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=22;fillColor=default;strokeColor=default;" target="mode_select" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="decision_pa2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="PA2按键选择?" vertex="1">
+          <mxGeometry height="115" width="270" x="690" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="mode_select" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=22;fillColor=default;strokeColor=default;" target="decision_pa2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="decision_pa2" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fillColor=default;strokeColor=default;" target="custom_enter" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="custom_label" connectable="0" parent="a3" style="edgeLabel;html=1;align=center;verticalAlign=middle;fontSize=21;fontStyle=1;fillColor=default;strokeColor=default;" value="双击" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="10" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="custom_enter" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统模式进入提示状态&lt;br&gt;播报:&quot;成功进入自选模式&quot;" vertex="1">
+          <mxGeometry height="101.5" width="260" x="260" y="308.5" as="geometry" />
+        </mxCell>
+        <mxCell id="custom_idle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统空闲等待状态&lt;br&gt;静默等待语音命令词" vertex="1">
+          <mxGeometry height="100" width="260" x="260" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="custom_enter" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;fillColor=default;strokeColor=default;" target="custom_idle" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-17" edge="1" parent="1" source="voice_cmd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=default;strokeColor=default;" target="calib">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="voice_cmd" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="操作者说出训练命令词&lt;br&gt;语音识别→回传ID&lt;div&gt;→开始执行对应训练模式&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="260" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" source="custom_idle" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=20;fillColor=default;strokeColor=default;" target="voice_cmd" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" edge="1" parent="1" source="decision_pa2" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fillColor=default;strokeColor=default;" target="full_enter" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="full_label" connectable="0" parent="a6" style="edgeLabel;html=1;align=center;verticalAlign=middle;fontSize=21;fontStyle=1;fillColor=default;strokeColor=default;" value="单击" vertex="1">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint x="-10" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="full_enter" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=21;" value="系统模式进入提示状态&lt;br&gt;播报:&quot;成功进入完整训练模式&quot;" vertex="1">
+          <mxGeometry height="102.5" width="280" x="1170" y="306.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=default;strokeColor=default;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="495" as="sourcePoint" />
+            <mxPoint x="825.75" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-21Z6KWUF_x9bcgv7NSQ-2" edge="1" parent="1" source="full_a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;fillColor=default;strokeColor=default;" target="full_b">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="495" />
+              <mxPoint x="1040" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="full_a" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="模式A 注视稳定性训练" vertex="1">
+          <mxGeometry height="90" width="260" x="1180" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" edge="1" parent="1" source="full_enter" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=21;fillColor=default;strokeColor=default;" target="full_a" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-5" edge="1" parent="1" source="j5R71MFXy7MLwLSegSWM-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=default;strokeColor=default;" target="full_b" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1310" y="640" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8" edge="1" parent="1" source="full_a" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=12;fillColor=default;strokeColor=default;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-6" edge="1" parent="1" source="full_b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fillColor=default;strokeColor=default;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="789.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="full_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="模式B 扫视训练" vertex="1">
+          <mxGeometry height="90" width="260" x="1180" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fillColor=default;strokeColor=default;" target="full_c" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="829.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-8" edge="1" parent="1" source="full_c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fillColor=default;strokeColor=default;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="full_c" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="模式C 平稳追踪训练" vertex="1">
+          <mxGeometry height="90" width="260" x="1180" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-10" edge="1" parent="1" source="full_d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fillColor=default;strokeColor=default;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="full_d" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="模式D 视觉聚焦训练" vertex="1">
+          <mxGeometry height="90" width="260" x="1180" y="1079" as="geometry" />
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-13" edge="1" parent="1" source="full_e" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=default;strokeColor=default;" target="mode_select">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="1420" />
+              <mxPoint x="1550" y="1420" />
+              <mxPoint x="1550" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-14" connectable="0" parent="mrA_2EY5RW9R5uv71Tvu-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;fillColor=default;strokeColor=default;" value="顺序模式完成，回到模式选择" vertex="1">
+          <mxGeometry relative="1" x="0.6861" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="full_e" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="模式E 空间忽略训练" vertex="1">
+          <mxGeometry height="90" width="260" x="1180" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="calib" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统姿态校准状态&lt;br&gt;陀螺仪零偏校准(2.5s)" vertex="1">
+          <mxGeometry height="80" width="288.5" x="681.5" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="train_prompt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统训练提示状态&lt;br&gt;播报专用语音引导(4s)" vertex="1">
+          <mxGeometry height="90" width="288.5" x="681.5" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="a16" edge="1" parent="1" source="calib" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=22;fillColor=default;strokeColor=default;" target="train_prompt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-11" edge="1" parent="1" source="train_exec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;fillColor=default;strokeColor=default;" target="pause">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-12" connectable="0" parent="mKAWMoBOkSJu9WOX29SG-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=21;fillColor=default;strokeColor=default;" value="超限报警" vertex="1">
+          <mxGeometry relative="1" x="0.0212" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="train_exec" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统训练执行状态&lt;br&gt;每10ms: 姿态监测+执行训练" vertex="1">
+          <mxGeometry height="90" width="288.5" x="681.5" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="a17" edge="1" parent="1" source="train_prompt" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=22;fillColor=default;strokeColor=default;" target="train_exec" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-7" edge="1" parent="1" source="feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=default;strokeColor=default;" target="custom_idle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1115" />
+              <mxPoint x="200" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-8" connectable="0" parent="mKAWMoBOkSJu9WOX29SG-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=21;fillColor=default;strokeColor=default;" value="单次训练完成，回到空闲等待状态" vertex="1">
+          <mxGeometry relative="1" x="-0.4918" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="feedback" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统反馈评价状态&lt;br&gt;分级评价 + 语音播报成绩" vertex="1">
+          <mxGeometry height="90" width="290" x="681" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="a18" edge="1" parent="1" source="train_exec" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=22;fillColor=default;strokeColor=default;" target="feedback" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-16" edge="1" parent="1" source="pause" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;fillColor=default;strokeColor=default;" target="train_exec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-17" connectable="0" parent="mKAWMoBOkSJu9WOX29SG-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=21;fillColor=default;strokeColor=default;" value="恢复训练" vertex="1">
+          <mxGeometry relative="1" x="0.1516" y="-3" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pause" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=22;" value="系统安全暂停状态&lt;br&gt;姿态连续正常3s自动恢复" vertex="1">
+          <mxGeometry height="110" width="260" x="260" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="global_cmds" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=20;align=left;verticalAlign=top;" value="全局语音命令(任意状态下生效)&lt;br&gt;━━━━━━━━━━━━━━&lt;br&gt;• &quot;暂停训练&quot; → 进入系统暂停状态&lt;br&gt;• &quot;继续训练&quot; → 从暂停恢复&lt;br&gt;• &quot;重新开始&quot; → 重新开始当前模式&lt;br&gt;• &quot;跳过这个&quot; → 跳过当前模式&lt;br&gt;• &quot;你好小盈&quot; → 5s语音监听窗口&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="181" width="320" x="200" y="1199" as="geometry" />
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fillColor=default;strokeColor=default;" target="full_e" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="1250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mrA_2EY5RW9R5uv71Tvu-9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fillColor=default;strokeColor=default;" target="full_d" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="1040" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=default;strokeColor=default;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="914" />
+            </Array>
+            <mxPoint x="1040" y="700" as="sourcePoint" />
+            <mxPoint x="1180" y="914" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=default;strokeColor=default;" target="full_d" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1124" />
+            </Array>
+            <mxPoint x="1040" y="910" as="sourcePoint" />
+            <mxPoint x="1200" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mKAWMoBOkSJu9WOX29SG-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=default;strokeColor=default;" target="full_e" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1335" />
+            </Array>
+            <mxPoint x="1040" y="1120" as="sourcePoint" />
+            <mxPoint x="1100" y="1290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j5R71MFXy7MLwLSegSWM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=20;" value="下一状态按键确认" vertex="1">
+          <mxGeometry height="40" width="180" x="1220" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="j5R71MFXy7MLwLSegSWM-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=20;" value="下一状态按键确认" vertex="1">
+          <mxGeometry height="40" width="180" x="1220" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="j5R71MFXy7MLwLSegSWM-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=20;" value="下一状态按键确认" vertex="1">
+          <mxGeometry height="40" width="180" x="1220" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="j5R71MFXy7MLwLSegSWM-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=20;" value="下一状态按键确认" vertex="1">
+          <mxGeometry height="40" width="180" x="1220" y="1210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
