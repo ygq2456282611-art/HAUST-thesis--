@@ -95,8 +95,8 @@
 % ============================================================
 %  章/节/小节 标题格式
 %  章: 三号黑体居中, "第1章  标题", 章下空两行
-%  节: 四号黑体左起, "§1.1  标题", 上下各空一行
-%  小节: 小四黑体左起, "§1.1.1  标题", 不空行
+%  节: 四号黑体左起, "1.1  标题", 上下各空一行
+%  小节: 小四黑体左起, "1.1.1  标题", 不空行
 % ============================================================
 \ctexset{
   chapter = {
@@ -111,16 +111,16 @@
   },
   section = {
     format      = \zihao{4}\heiti\raggedright,
-    name        = {§,},
-    number      = \arabic{chapter}.\arabic{section},
-    aftername   = \quad,
-    beforeskip  = 18pt,
-    afterskip   = 18pt,
-    fixskip     = true,
-  },
-  subsection = {
-    format      = \zihao{-4}\heiti\raggedright,
-    name        = {§,},
+      name        = {,},
+      number      = \arabic{chapter}.\arabic{section},
+      aftername   = \quad,
+      beforeskip  = 18pt,
+      afterskip   = 18pt,
+      fixskip     = true,
+    },
+    subsection = {
+      format      = \zihao{-4}\heiti\raggedright,
+      name        = {,},
     number      = \arabic{chapter}.\arabic{section}.\arabic{subsection},
     aftername   = \quad,
     beforeskip  = 0pt,
@@ -142,13 +142,14 @@
 \renewcommand{\contentsname}{目\ \ 录}
 
 % ============================================================
-%  图表标题: 五号楷体
-%  图: 编号居中在下方, 表: 左对齐在上方
+%  图表标题: 表题五号黑体, 图注小五号宋体
+%  图: 编号居中在下方, 表: 居中在上方
 %  编号: 图3-2 / 表5-4 (按章编号)
 % ============================================================
-\DeclareCaptionFont{kaifive}{\zihao{5}\kaishu}
+\DeclareCaptionFont{wuhaosong}{\zihao{-5}\songti}
+\DeclareCaptionFont{wuhaohei}{\zihao{5}\heiti}
 \captionsetup{
-  font        = kaifive,
+  font        = wuhaosong,
   labelsep    = quad,
   justification = centering,
   format      = hang,
@@ -156,7 +157,8 @@
 \captionsetup[figure]{ position = bottom }
 \captionsetup[table]{
   position = top,
-  justification = raggedright,
+  font   = wuhaohei,
+  justification = centering,
   singlelinecheck = false,
 }
 
@@ -171,7 +173,7 @@
 % ============================================================
 %  公式编号: (章-序号), 如 (3-2)
 % ============================================================
-\renewcommand{\theequation}{\thechapter-\arabic{equation}}
+\renewcommand{\theequation}{(\thechapter-\arabic{equation})}
 
 % ============================================================
 %  参考文献标题格式
@@ -181,7 +183,7 @@
 % ============================================================
 \ctexset{
   appendix = {
-    name    = {附录,},
+    name    = {附录\ ,},
     number  = \Alph{chapter},
   }
 }
